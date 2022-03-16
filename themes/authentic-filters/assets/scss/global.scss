@@ -26,6 +26,7 @@ $font-weight_bold: 700;
 
 $space_175: 175px;
 $space_165: 165px;
+$space_100: 100px;
 $space_85: 85px;
 $space_75: 75px;
 $space_65: 65px;
@@ -33,6 +34,7 @@ $space_50: 50px;
 $space_35: 35px;
 $space_30: 30px;
 $space_26: 26px;
+$space_20: 20px;
 $space_15: 15px;
 $space_10: 10px;
 
@@ -79,4 +81,25 @@ html {
     border-radius: 10px;
     padding: 11px 24px;
     cursor: pointer;
+    text-decoration: none;
+
+}
+.learn {
+    border-radius: 5px;
+    border: 1px solid black;
+    background: none;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+.right {
+    flex-direction: row-reverse !important;
+}
+
+.left-shadow {
+    box-shadow: -15px 15px 0px 0px $color_box_shadow;
+}
+
+.right-shadow {
+    box-shadow: 15px 15px $color_box_shadow;
 }
