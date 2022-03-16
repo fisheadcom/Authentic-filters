@@ -1,0 +1,70 @@
+//...font size...//
+
+$font-size_12: 12px;
+$font-size_14: 14px;
+$font-size_16: 16px;
+$font-size_18: 18px;
+$font-size_20: 20px;
+$font-size_24: 24px;
+$font-size_36: 36px;
+$font-size_48: 48px;
+$font-size_64: 64px;
+
+
+
+//...font weights...//
+
+
+$font-weight_regular: 400;
+$font-weight_medium: 600;
+$font-weight_bold: 700;
+
+
+
+//...Spacing...//
+
+$space_175: 175px;
+$space_88: 88px;
+$space_35: 35px;
+$space_50: 50px;
+
+
+//Colors
+
+$color_primary: #1C2F64;
+$color_secondary: #A3DD00;
+$color_black: #000;
+$color_white: #FFF;
+$color_box_shadow: #9EEFFA;
+$color_star: #ED6565;
+
+
+//Media Queries
+
+$tablet: 768px;
+$laptop: 800px;
+$small_desktop: 992px;
+$desktop: 1024px;
+$large_desktop: 1200px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.click-button {
+    font-size: 18px;
+    background: $color_secondary;
+    border: none;
+    color: white !important;
+    border-radius: 10px;
+    padding: 11px 24px;
+    cursor: pointer;
+}
