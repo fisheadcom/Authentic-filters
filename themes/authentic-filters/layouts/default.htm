@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="{{ ['assets/scss/header.scss']|theme}}">
-    <link rel="stylesheet" href="{{ ['assets/scss/footer.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/main.scss']|theme}}">
 
 
 </head>
@@ -27,8 +26,9 @@
 </section>
 
 <!-- Footer -->
-
-
+<footer>
+{% partial 'footer' %}
+</footer>
 <script
     type="text/javascript"
     src="https://code.jquery.com/jquery-3.6.0.min.js"
