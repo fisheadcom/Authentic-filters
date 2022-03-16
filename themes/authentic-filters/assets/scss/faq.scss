@@ -1,0 +1,65 @@
+@import "global.scss";
+
+.faq-main {
+    padding-top: 8vh;
+
+    .faq-content {
+        padding: $space_35;
+
+        .faq-list {
+            list-style: none;
+
+            li {
+                background-color: $color_white;
+                border-radius: 5px;
+                padding: $space-26 $space-30;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+                margin: 0px auto $space-30;
+                text-align: left;
+                width: 100%;
+
+                .faq-heading {
+                    font-size: $font_size_24;
+                    position: relative;
+                    cursor: pointer;
+                    margin-left: 0px;
+                    color: $color-primary;
+                }
+
+            }
+
+            .faq-heading::before {
+                content: "+";
+                display: block;
+                position: absolute;
+                right: -14px;
+                top: 1px;
+                color: $color-primary;
+
+            }
+
+            .the-active .faq-heading::before {
+                content: "-";
+            }
+
+            .faq-text {
+                display: none;
+            }
+
+            .read {
+                font-size: $font-size_18;
+                color: $color_faq;
+                margin-top: $space-26;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $small_desktop) {
+    .faq-main {
+        .faq-content {
+            padding: $space_35 $space_75;
+        }
+    }
+}

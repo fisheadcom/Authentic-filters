@@ -1,8 +1,187 @@
 @import "global.scss";
 
-footer {
+.footer-main {
     width: 100%;
     background-color: $color_primary;
-    padding: $space_88 $space_35;
-    color: white;
+    padding: $space_65 $space_35;
+
+    .footer-section {
+
+        .footer-logo-section {
+            width: 100%;
+
+            .footer-logo {
+                width: 70%;
+                padding-bottom: $space_30;
+
+                img {
+                    width: 170px;
+                    height: auto;
+                }
+            }
+
+            .footer-social-links {
+                display: flex;
+                flex-direction: row;
+                width: 170px;
+                justify-content: space-between;
+
+                li {
+                    list-style: none;
+                    //width: 24%;
+                    //height: 24%;
+                    a {
+                        img {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+
+            .footer-copyright {
+                padding-top: 30px;
+                width: 230px;
+
+                p {
+                    font-weight: $font-weight_light;
+                    font-size: $font-size_14;
+                    line-height: 24px;
+                    color: $color_white;
+                    width: auto;
+                }
+
+                .copy {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .line {
+                        justify-content: flex-end;
+                        border: 1px solid white;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+
+        .footer-mobile-company-links {
+            width: 100%;
+            padding-top: $space_30;
+
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                flex-wrap: wrap;
+
+
+                li {
+                    list-style: none;
+
+                    a {
+
+                        color: $color_footer_links;
+                        text-decoration: none;
+                        font-weight: $font-weight_light;
+                        font-size: $font-size_12;
+                        line-height: 26px;
+                        padding-right: $space_15;
+                    }
+                }
+            }
+        }
+
+        .footer-desktop-company-links {
+            display: none;
+        }
+    }
+}
+
+@media SCREEN and (min-width: $small_desktop) {
+    .footer-mobile-company-links {
+        display: none;
+        justify-content: space-evenly;
+    }
+    .footer-main {
+        padding: $space_35 $space_85;
+
+        .footer-section {
+            display: flex;
+
+            .footer-logo-section {
+                width: 60%;
+
+            }
+
+            .footer-desktop-company-links {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .footer-headers {
+                    color: white;
+                    padding-bottom: $space_30;
+                }
+
+                .footer-links {
+                    list-style: none;
+
+                    a {
+                        color: $color_footer_links;
+                        text-decoration: none;
+                        //opacity: 0.3;
+                        font-weight: $font-weight_light;
+                        line-height: 2.6;
+                    }
+
+                }
+
+
+                .footer-get-in-touch {
+                    form {
+                        .footer-form {
+                            position: relative;
+
+                            input {
+                                border: none;
+                                background-color: $color_white;
+                                opacity: 0.3;
+                                padding: $space_10;
+                                margin-top: $space_10;
+                                border-radius: 10px;
+                                position: relative;
+
+                                ::placeholder {
+                                    color: $color_footer_links;
+                                }
+                            }
+
+                            button {
+                                position: absolute;
+                                top: 5px;
+                                right: 0;
+                                background: transparent;
+                                border: none;
+                                transform: translate(-50%, 50%);
+
+                                img {
+                                    width: 22px;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media SCREEN and (min-width: $large_desktop) {
+    .footer-main {
+        padding: $space_35 $space_175;
+    }
 }

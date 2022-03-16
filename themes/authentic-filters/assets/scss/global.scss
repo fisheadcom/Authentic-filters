@@ -15,6 +15,7 @@ $font-size_64: 64px;
 //...font weights...//
 
 
+$font-weight_light: 100;
 $font-weight_regular: 400;
 $font-weight_medium: 600;
 $font-weight_bold: 700;
@@ -24,9 +25,17 @@ $font-weight_bold: 700;
 //...Spacing...//
 
 $space_175: 175px;
-$space_88: 88px;
-$space_35: 35px;
+$space_165: 165px;
+$space_85: 85px;
+$space_75: 75px;
+$space_65: 65px;
 $space_50: 50px;
+$space_35: 35px;
+$space_30: 30px;
+$space_26: 26px;
+$space_15: 15px;
+$space_10: 10px;
+
 
 
 //Colors
@@ -37,6 +46,8 @@ $color_black: #000;
 $color_white: #FFF;
 $color_box_shadow: #9EEFFA;
 $color_star: #ED6565;
+$color_footer_links: #D9DBE1;
+$color_faq: #0A0A0A;
 
 
 //Media Queries
@@ -45,7 +56,8 @@ $tablet: 768px;
 $laptop: 800px;
 $small_desktop: 992px;
 $desktop: 1024px;
-$large_desktop: 1200px;
+$desktop_xl: 1200px;
+$large_desktop: 1312px;
 
 
 * {
