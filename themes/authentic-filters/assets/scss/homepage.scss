@@ -43,7 +43,7 @@
         }
         .about-content {
             h1 {
-                padding-bottom: $space-35;
+                padding-bottom: $space-20;
             }
             p {
                 padding-bottom: $space-20;
@@ -60,7 +60,7 @@
 }
 
 
-@media SCREEN and (min-width: $tablet) {
+@media SCREEN and (min-width: $small_desktop) {
     .home-page {
 
         .banner {
