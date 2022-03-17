@@ -161,25 +161,15 @@ p {
     box-shadow: 15px 15px $color_box_shadow;
 }
 
-.underline-header {
-    //width: 70px;
-    //border: 1.5px solid black;
-    //background: black;
-    //border-radius: 5px;
-    //margin-bottom: $space_20;
-}
+
 
 .underline-header {
     background-color: $color_black;
-    width: 50px;
+    width: 10%;
     height: 4px;
     display: block;
     margin-top: 10px;
-    @media SCREEN and (min-width: $desktop) {
-        .underline-header {
-            width: 80px;
-        }
-    }
+    margin-bottom: $space_20;
 }
 
 .headers {

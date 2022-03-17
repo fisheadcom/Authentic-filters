@@ -1,0 +1,56 @@
+@import "global";
+
+
+.faqpage {
+    padding-top: 10vh;
+
+    .banner {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        //background-image: url("../images/faq/faq.jpg");
+        //background-repeat: no-repeat;
+        //background-blend-mode: darken;
+        //background-size: 100% 100%;
+        //background-size: contain;
+
+        .image {
+            img {
+                width: 100%
+            }
+        }
+
+        .content-faq {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 9999;
+        }
+
+        h2 {
+            z-index: 190;
+            width: 100%;
+            color: $color_white;
+        }
+    }
+
+    .banner::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 98.5%;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        z-index: 110;
+    }
+
+    .banner > * {
+        z-index: 10;
+        position: relative;
+    }
+}

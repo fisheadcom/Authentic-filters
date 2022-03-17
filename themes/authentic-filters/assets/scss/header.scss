@@ -12,7 +12,7 @@ header {
     padding: $space_10 $space_25;
     position: fixed;
     justify-content: space-around;
-    z-index: 3;
+    z-index: 999;
 
     .logo {
         flex: 2;

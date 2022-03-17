@@ -1,0 +1,20 @@
+title = "faq-page"
+layout = "default"
+url = "/faq-page"
+==
+
+<link rel="stylesheet" href="{{ ['assets/scss/faq-page.scss']|theme}}">
+
+<div class="faqpage">
+    <div class="banner">
+        <div class="image">
+            <img src="{{ 'assets/images/faq/faq.jpg'|theme}}" alt="">
+        </div>
+        <div class="content-faq">
+            <h2>Frequently Asked Questions</h2>
+            <input type="text">
+        </div>
+    </div>
+</div>
+
+{% partial "faq" %}

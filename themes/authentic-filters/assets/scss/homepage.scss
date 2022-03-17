@@ -7,6 +7,7 @@
     .banner {
         padding: $space_25 * 4 $space_35;
         width: 100%;
+
         .first-content {
             h1 {
                 font-size: $font-size_24;
@@ -14,11 +15,13 @@
                 letter-spacing: 1.25px;
                 line-height: 1.65;
             }
+
             p {
                 padding-top: $space_35;
                 padding-bottom: $space_35;
             }
         }
+
         .second-content {
             img {
                 display: none;
@@ -26,22 +29,144 @@
         }
     }
 
+    .main-services {
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: $space_20*4 $space_35;
+            text-align: center;
+            align-content: center;
+
+            .box-1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: center;
+
+                .head-services {
+                    .head {
+                        text-align: center;
+                        font-size: $font-size_18;
+                        letter-spacing: 2px;
+                        font-weight: $font-weight_medium;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        font-size: $font-size_24;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .cards {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 0 auto;
+
+                    .card {
+                        background-color: $color_primary;
+                        //width: 390px;
+                        //height: auto;
+                        margin-bottom: $space_35;
+                        position: relative;
+                        z-index: 0;
+                        text-align: center;
+                        align-items: center;
+
+                        h1 {
+                            align-items: center;
+                            font-size: $font-size_64;
+                            text-align: center;
+                            color: $color-white;
+                            z-index: 100;
+                        }
+
+                        .rectangle {
+                            background-color: $color_secondary;
+                            width: 40px;
+                            height: 30px;
+                            position: absolute;
+                            top: 17%;
+                            left: 47%;
+                            transform: translate(-50%, 50%);
+                            z-index: -9;
+
+                        }
+
+                        .underline-header {
+                            background-color: $color_white !important;
+                            width: 80px;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0 auto;
+                        }
+
+                        .background_number {
+                            h1 {
+                                display: none;
+                                clip-path: inset(0px 0px 16px 10px);
+                                color: white;
+                                opacity: 0.1;
+                                font-size: $font-size_64;
+                                position: absolute;
+                                bottom: -24px;
+                                left: -10px;
+                            }
+                        }
+
+                        .service-content {
+                            padding-top: $space_20;
+
+                            h3 {
+                                color: $color-white;
+                            }
+
+                            p {
+                                color: $color-white;
+                                padding-bottom: $space_20;
+
+                            }
+
+                            a {
+                                z-index: 9999;
+                                cursor: pointer;
+                                font-size: 25px;
+                                text-decoration: none;
+                                color: $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .main-box {
         padding: $space_35 * 2 $space_35;
+
         .first-image {
             padding-bottom: $space_35;
+
             img {
                 width: 100%;
                 height: auto;
             }
         }
+
         .about-content {
             h1 {
                 padding-bottom: $space_20;
             }
+
             p {
                 padding-bottom: $space_20;
             }
+
             .button {
                 padding-top: $space_20;
             }
@@ -74,6 +199,38 @@
                 }
             }
         }
+
+        .main-services {
+            .services {
+                .box-1 {
+                    .cards {
+                            display: flex;
+                            flex-direction: row;
+                            text-align: center;
+                            justify-content: center;
+                            align-content: center;
+                            margin: 0 auto;
+
+
+                            .card {
+                            width: 30%;
+                            margin: $space_10;
+                            .background_number {
+                                h1 {
+                                    display: unset;
+                                }
+                            }
+                                .rectangle {
+                                    top: 14%;
+
+                                }
+                        }
+                    }
+                }
+            }
+        }
+
+
         .main-box {
             padding: $space_25 * 4 $space_35 * 2;
 
@@ -85,6 +242,7 @@
             .first-image {
                 width: 40%;
             }
+
             .about-content {
                 width: 50%;
             }

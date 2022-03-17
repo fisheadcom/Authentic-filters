@@ -3,16 +3,16 @@
 
 <header>
     <div class="logo">
-        <img src="{{'assets/images/logo/authentic-filters-logo.jpg'|theme}}" alt="" />
+        <a href="{{'home-page'|page}}"> <img src="{{'assets/images/logo/authentic-filters-logo.jpg'|theme}}" alt="" /></a>
     </div>
     <nav>
         <ul class="nav-links">
             <li>
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="{{ 'services'|page }}">Services</a>
             </li>
-            <li><a class="nav-link" href="#">About Us</a></li>
-            <li><a class="nav-link" href="#">Maintenance Program</a></li>
-            <li><a class="nav-link" href="#">FAQ's</a></li>
+            <li><a class="nav-link" href="{{'about'|page}}">About Us</a></li>
+            <li><a class="nav-link" href="{{'maintenance'|page}}">Maintenance Program</a></li>
+            <li><a class="nav-link" href="{{'faq-page'|page}}">FAQ's</a></li>
             <li><a class="nav-link click-button"  href="#">Get Started</a></li>
         </ul>
     </nav>
