@@ -3,7 +3,7 @@
 .footer-main {
     width: 100%;
     background-color: $color_primary;
-    padding: $space_65 $space_35;
+    padding: $space_35 * 2 $space_35;
 
     .footer-section {
 
@@ -12,7 +12,7 @@
 
             .footer-logo {
                 width: 70%;
-                padding-bottom: $space_30;
+                padding-bottom: $space_35;
 
                 img {
                     width: 170px;
@@ -68,7 +68,7 @@
 
         .footer-mobile-company-links {
             width: 100%;
-            padding-top: $space_30;
+            padding-top: $space_35;
 
 
             ul {
@@ -88,7 +88,7 @@
                         font-weight: $font-weight_light;
                         font-size: $font-size_12;
                         line-height: 26px;
-                        padding-right: $space_15;
+                        padding-right: $space_20;
                     }
                 }
             }
@@ -100,13 +100,13 @@
     }
 }
 
-@media SCREEN and (min-width: $small_desktop) {
+@media SCREEN and (min-width: $desktop) {
     .footer-mobile-company-links {
         display: none;
         justify-content: space-evenly;
     }
     .footer-main {
-        padding: $space_35 $space_85;
+        padding: $space_35 * 2 $space_35*2;
 
         .footer-section {
             display: flex;
@@ -123,7 +123,9 @@
 
                 .footer-headers {
                     color: white;
-                    padding-bottom: $space_30;
+                    padding-bottom: $space_35;
+                    font-size: $font-size_20;
+                    font-weight: $font-weight_medium;
                 }
 
                 .footer-links {
@@ -132,7 +134,7 @@
                     a {
                         color: $color_footer_links;
                         text-decoration: none;
-                        //opacity: 0.3;
+                        font-size: $font-size_16;
                         font-weight: $font-weight_light;
                         line-height: 2.6;
                     }
@@ -154,7 +156,7 @@
                                 border-radius: 10px;
                                 position: relative;
 
-                                ::placeholder {
+                                &::placeholder {
                                     color: $color_footer_links;
                                 }
                             }
@@ -182,6 +184,6 @@
 
 @media SCREEN and (min-width: $large_desktop) {
     .footer-main {
-        padding: $space_35 $space_175;
+        padding: $space_35 * 2 $space_175;
     }
 }

@@ -5,10 +5,8 @@
     padding-top: 8vh;
 
     .banner {
-        padding: $space_100 $space_35;
-
+        padding: $space_25 * 4 $space_35;
         width: 100%;
-
         .first-content {
             h1 {
                 font-size: $font-size_24;
@@ -16,26 +14,22 @@
                 letter-spacing: 1.25px;
                 line-height: 1.65;
             }
-
             p {
-                padding-top: $space-30;
-                padding-bottom: $space-30;
+                padding-top: $space_35;
+                padding-bottom: $space_35;
             }
         }
-
         .second-content {
             img {
                 display: none;
-
             }
         }
     }
 
-
     .main-box {
-        padding: $space_85 $space_35;
+        padding: $space_35 * 2 $space_35;
         .first-image {
-            padding-bottom: $space-35;
+            padding-bottom: $space_35;
             img {
                 width: 100%;
                 height: auto;
@@ -43,28 +37,24 @@
         }
         .about-content {
             h1 {
-                padding-bottom: $space-20;
+                padding-bottom: $space_20;
             }
             p {
-                padding-bottom: $space-20;
+                padding-bottom: $space_20;
             }
             .button {
-                padding-top: $space-20;
+                padding-top: $space_20;
             }
         }
     }
-
-
-
-
 }
 
 
-@media SCREEN and (min-width: $small_desktop) {
+@media SCREEN and (min-width: $desktop) {
     .home-page {
 
         .banner {
-            padding: $space_100 $space_85;
+            padding: $space_25 * 4 $space_35 * 2;
 
             display: flex;
             flex-direction: row;
@@ -85,7 +75,7 @@
             }
         }
         .main-box {
-            padding: $space_100 $space_85;
+            padding: $space_25 * 4 $space_35 * 2;
 
             display: flex;
             flex-direction: row;

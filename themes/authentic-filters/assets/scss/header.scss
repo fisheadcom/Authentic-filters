@@ -9,7 +9,7 @@ header {
     margin: auto;
     min-height: 8vh;
     align-items: center;
-    padding: $space_10 $space_26;
+    padding: $space_10 $space_25;
     position: fixed;
     justify-content: space-around;
     z-index: 3;
@@ -31,7 +31,7 @@ header {
             justify-content: space-around;
             //width: auto;
             position: absolute;
-            right: 0px;
+            right: 0;
             height: 92vh;
             top: 8vh;
             background-color: $color_white;
@@ -49,8 +49,8 @@ header {
                     color: $color_black;
                     text-decoration: none;
                     font-weight: $font-weight_medium;
-                    line-height: 18px;
-                    font-size: $font_size_18;
+                    //line-height: 18px;
+                    font-size: $font_size_14;
                 }
             }
         }
@@ -100,7 +100,7 @@ header {
     }
 }
 
-@media screen and (min-width: $small_desktop) {
+@media screen and (min-width: $desktop) {
     header {
         flex-direction: row;
         width: 100%;
@@ -125,7 +125,7 @@ header {
         }
         }
         .logo {
-            flex: 1.5;
+            flex: 2.5;
         }
 
 
@@ -137,24 +137,32 @@ header {
     }
 }
 
-
-@media SCREEN and (min-width: $desktop){
-    header {
-        nav {
-            flex: 4;
-        }
-        .logo {
-            flex: 1.5;
-        }
-    }
-}
+//
+//@media SCREEN and (min-width: $desktop){
+//    header {
+//        nav {
+//            flex: 4;
+//        }
+//        .logo {
+//            flex: 1.5;
+//        }
+//    }
+//}
 @media SCREEN and (min-width: $desktop_xl){
     header {
         nav {
             flex: 4;
+            .nav-links {
+                li {
+                    .nav-link {
+                        font-size: $font_size_18;
+                    }
+                }
+            }
+
         }
         .logo {
-            flex: 1.5;
+            flex: 2.5;
         }
     }
 }

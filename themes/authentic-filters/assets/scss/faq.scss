@@ -12,18 +12,18 @@
             li {
                 background-color: $color_white;
                 border-radius: 5px;
-                padding: $space-26 $space-30;
+                padding: $space_25 $space_35;
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-                margin: 0px auto $space-30;
+                margin: 0 auto $space_35;
                 text-align: left;
                 width: 100%;
 
                 .faq-heading {
-                    font-size: $font_size_24;
+                    font-size: $font-size_24;
                     position: relative;
                     cursor: pointer;
-                    margin-left: 0px;
-                    color: $color-primary;
+                    margin-left: 0;
+                    color: $color_primary;
                 }
 
             }
@@ -34,7 +34,7 @@
                 position: absolute;
                 right: -14px;
                 top: 1px;
-                color: $color-primary;
+                color: $color_primary;
 
             }
 
@@ -49,17 +49,17 @@
             .read {
                 font-size: $font-size_18;
                 color: $color_faq;
-                margin-top: $space-26;
+                margin-top: $space_25;
             }
 
         }
     }
 }
 
-@media screen and (min-width: $small_desktop) {
+@media screen and (min-width: $desktop) {
     .faq-main {
         .faq-content {
-            padding: $space_35 $space_75;
+            padding: $space_35 $space_20 * 4;
         }
     }
 }

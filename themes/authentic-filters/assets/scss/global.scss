@@ -1,14 +1,14 @@
 //...font size...//
 
-$font-size_12: 12px;
-$font-size_14: 14px;
-$font-size_16: 16px;
-$font-size_18: 18px;
-$font-size_20: 20px;
-$font-size_24: 24px;
-$font-size_36: 36px;
-$font-size_48: 48px;
-$font-size_64: 64px;
+$font-size_12: 0.666rem;
+$font-size_14: 0.777rem;
+$font-size_16: 0.888rem;
+$font-size_18: 1rem;
+$font-size_20: 1.111rem;
+$font-size_24: $font-size_12 * 2;
+$font-size_36: $font-size_12 * 3;
+$font-size_48: $font-size_12 * 4;
+$font-size_64: $font-size_16 * 4;
 
 
 //...font weights...//
@@ -22,19 +22,14 @@ $font-weight_bold: 700;
 
 //...Spacing...//
 
-$space_175: 175px;
-$space_165: 165px;
-$space_100: 100px;
-$space_85: 85px;
-$space_75: 75px;
-$space_65: 65px;
-$space_50: 50px;
-$space_35: 35px;
-$space_30: 30px;
-$space_26: 26px;
-$space_20: 20px;
-$space_15: 15px;
 $space_10: 10px;
+$space_20: $space_10 * 2;
+$space_25: 25px;
+$space_35: 35px;
+//$space_50: $space_25 *2;
+//$space_70: $space_35 *2;
+//$space_100: $space_25 *4;
+$space_175: 175px;
 
 
 //Colors
@@ -47,17 +42,16 @@ $color_box_shadow: #9EEFFA;
 $color_star: #ED6565;
 $color_footer_links: #D9DBE1;
 $color_faq: #0A0A0A;
+$color_contact_inputs: #A3AAC2;
 
 
 //Media Queries
 
 $tablet: 768px;
 $laptop: 800px;
-$small_desktop: 992px;
 $desktop: 1024px;
 $desktop_xl: 1200px;
 $large_desktop: 1312px;
-
 
 * {
     margin: 0;
@@ -67,26 +61,90 @@ $large_desktop: 1312px;
 
 html {
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.main-page {
+    padding-top: $space_175;
+}
+
+//Fonts for Mobiles
+
+h1 {
+    font-size: $font-size_24;
+    font-weight: $font-weight_bold;
+    //line-height: $line_height_36;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_48;
+        //line-height: $line_height_72_2;
+    }
+}
+h2 {
+    font-size: $font-size_24;
+    font-weight: $font-weight_bold;
+    //line-height: $line_height_36;
+    padding-bottom: $space_35;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_36;
+    }
+}
+
+h3 {
+    font-size: $font-size_18;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_24;
+    }
+}
+
+h4 {
+    font-size: $font-size_16;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_16;
+    }
+}
+
+h5 {
+    font-size: $font-size_14;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_18;
+    }
+}
+
+h6 {
+    font-size: $font-size_12;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_16;
+    }
+}
+
+p {
+    font-size: $font-size_14;
+    //line-height: $line_height_20;
+    padding-bottom: $space_35;
+    //line-height: $line_height_20;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_18;
+        //line-height: $line_height_26;
+    }
 }
 
 
 .click-button {
-    font-size: 18px;
+    font-size: $font-size_18;
     background: $color_secondary;
     border: none;
-    color: white !important;
+    color: $color_white !important;
     border-radius: 10px;
     padding: 11px 24px;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 .learn {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid black;
     background: none;
-    padding: 5px;
+    padding: 11px 24px;
     color: black;
     text-decoration: none;
 }
@@ -110,15 +168,29 @@ html {
     //border-radius: 5px;
     //margin-bottom: $space_20;
 }
-.underline-header  {
+
+.underline-header {
     background-color: $color_black;
     width: 50px;
     height: 4px;
     display: block;
     margin-top: 10px;
-}
-@media SCREEN and (min-width: $small_desktop){
-    .underline-header  {
-        width: 80px;
+    @media SCREEN and (min-width: $desktop) {
+        .underline-header {
+            width: 80px;
+        }
     }
 }
+
+.headers {
+    font-size: $font-size_24;
+    color: $color_black;
+    font-weight: $font-weight_bold;
+    text-align: center;
+    padding-bottom: $space_25 * 2;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_36;
+    }
+}
+
+
