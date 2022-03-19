@@ -32,5 +32,13 @@ $(document).ready(function () {
             .toggleClass("the-active")
             .find(".faq-text")
             .slideToggle();
+        $(this).toggleClass("heading-color");
     });
+
+    $("#load-btn").on("click",function (){
+        $(".load-more").css("display","unset");
+        $("#load-btn").css("display","none")
+    })
+
+
 });

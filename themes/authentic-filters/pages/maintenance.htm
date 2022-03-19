@@ -1,8 +1,7 @@
-title = "Maintenance"
-layout = "default"
 url = "/maintenance"
+layout = "default"
+title = "Maintenance"
 ==
-
 <link rel="stylesheet" href="{{ ['assets/scss/maintenance.scss']|theme}}">
 
 <div class="maintenance">
@@ -13,14 +12,16 @@ url = "/maintenance"
                 filters, ducts and exhausts in optimal condition. We can package our maintenance & cleaning services to
                 meet individual requirements. Our system schedules the appointments automatically. You don’t have to
                 remember! </p>
-            <a href="#" class="click-button">Get Started</a>
+            <div class="click">
+                <a href="#" class="click-button">Get Started</a>
+            </div>
         </div>
         <div class="second-content">
             <img class="right-shadow" src="{{'assets/images/homepage/Program_chef.jpeg'|theme}}" alt=""/>
         </div>
     </div>
 
-
+<div class="main-page">
     <div class="main-content">
         <h1>The Advantage of our Maintenance Program<span class="underline-header "></span></h1>
 
@@ -35,5 +36,8 @@ url = "/maintenance"
 
     </div>
 
-
 </div>
+</div>
+
+
+{% partial "contact-form" %}

@@ -9,7 +9,7 @@ header {
     margin: auto;
     min-height: 8vh;
     align-items: center;
-    padding: $space_10 $space_25;
+    padding: $space_25 $space_25;
     position: fixed;
     justify-content: space-around;
     z-index: 999;
@@ -84,7 +84,7 @@ header {
     }
 
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-4px, 6px);
+        transform: rotate(-45deg) translate(0px, 0px);
     }
 
     .toggle .line2 {
@@ -92,7 +92,7 @@ header {
     }
 
     .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-10px, -10px);
     }
 
     .nav-links li {

@@ -2,8 +2,7 @@
 
 
 .home-page {
-    padding-top: 8vh;
-
+    padding-top: 10vh;
 
 
     .main-services {
@@ -11,7 +10,7 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: $space_20*4 $space_35;
+            padding: 0 $space_35;
             text-align: center;
             align-content: center;
 
@@ -27,7 +26,7 @@
                         text-align: center;
                         font-size: $font-size_24;
                         letter-spacing: 1px;
-                        font-weight: $font-weight_regular;
+                        font-weight: $font-weight_bold;
                     }
                 }
 
@@ -41,13 +40,13 @@
 
                     .card {
                         background-color: $color_primary;
-                        //width: 390px;
-                        //height: auto;
-                        margin-bottom: $space_35;
                         position: relative;
                         z-index: 0;
                         text-align: center;
                         align-items: center;
+                        margin-top: $space_20 * 3;
+                        box-shadow: $color_cards_shadow 0 0 0 0, $color_cards_shadow 0px 18px 36px -18px;
+                        padding: $space_20;
 
                         h1 {
                             align-items: center;
@@ -85,13 +84,14 @@
                                 opacity: 0.1;
                                 font-size: $font-size_64;
                                 position: absolute;
-                                bottom: -24px;
+                                bottom: -20px;
                                 left: -10px;
                             }
                         }
 
                         .service-content {
                             padding-top: $space_20;
+                            height: $space_20* 5;
 
                             h3 {
                                 color: $color-white;
@@ -100,16 +100,21 @@
                             p {
                                 color: $color-white;
                                 padding-bottom: $space_20;
-
+                                padding-top: $space_10;
                             }
 
-                            a {
-                                z-index: 9999;
-                                cursor: pointer;
-                                font-size: 25px;
-                                text-decoration: none;
-                                color: $color-white;
+
+                            #card-learn {
+                                margin-top: 10px;
                             }
+                        }
+
+                        a {
+                            font-weight: $font-weight_bold;
+                            cursor: pointer;
+                            font-size: 25px;
+                            text-decoration: none;
+                            color: $color-white;
                         }
                     }
                 }
@@ -117,34 +122,29 @@
         }
     }
 
-    .main-box {
-        padding: $space_35 * 2 $space_35;
+}
 
-        .first-image {
-            padding-bottom: $space_35;
+.faq-headers {
+    display: none !important;
+}
 
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .about-content {
-            h1 {
-                padding-bottom: $space_20;
-            }
-
-            p {
-                padding-bottom: $space_20;
-            }
-
-            .button {
-                padding-top: $space_20;
+@media SCREEN and (min-width: $tablet) {
+    .home-page {
+        .main-services {
+            .services {
+                .box-1 {
+                    .cards {
+                        .card {
+                            .service-content {
+                                height: $space_25 * 4;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
-
 
 @media SCREEN and (min-width: $desktop) {
     .home-page {
@@ -152,27 +152,40 @@
         .main-services {
             .services {
                 .box-1 {
+                    .head-services {
+                        h3 {
+                            font-size: $font-size_36;
+                        }
+                    }
+
                     .cards {
-                            display: flex;
-                            flex-direction: row;
-                            text-align: center;
-                            justify-content: center;
-                            align-content: center;
-                            margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: center;
+                        align-content: center;
+                        margin: 0 auto;
+                        padding-top: $space_35 * 4;
 
+                        .card {
+                            width: 40%;
+                            margin: $space_25 * 2;
 
-                            .card {
-                            width: 30%;
-                            margin: $space_10;
+                            .service-content {
+                                height: $space_265 - 35;
+                            }
+
                             .background_number {
                                 h1 {
                                     display: unset;
                                 }
                             }
-                                .rectangle {
-                                    top: 14%;
 
-                                }
+                            .rectangle {
+                                top: 11%;
+                                left: 44%;
+
+                            }
                         }
                     }
                 }
@@ -180,22 +193,6 @@
         }
 
 
-        .main-box {
-            padding: $space_25 * 4 $space_35 * 2;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-
-            .first-image {
-                width: 40%;
-            }
-
-            .about-content {
-                width: 50%;
-            }
-        }
     }
 }
 
@@ -209,8 +206,23 @@
                     font-size: $font-size_48;
                 }
             }
+        }
+        .main-services {
+            .services {
+                .box-1 {
+                    .cards {
+                        .card {
+                            .rectangle {
+                                top: 13%;
 
-
+                            }
+                            .service-content {
+                                height: $space_175;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

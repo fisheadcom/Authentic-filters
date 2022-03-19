@@ -4,29 +4,25 @@
 .faqpage {
     padding-top: 10vh;
 
-    .banner {
+    .faq-banner {
         position: relative;
         text-align: center;
         width: 100%;
         height: auto;
-        //background-image: url("../images/faq/faq.jpg");
-        //background-repeat: no-repeat;
-        //background-blend-mode: darken;
-        //background-size: 100% 100%;
-        //background-size: contain;
-
         .image {
             img {
-                width: 100%
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
             }
         }
 
         .content-faq {
             position: absolute;
-            top: 35%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, 50%);
-            z-index: 9999;
+            transform: translate(-50%, -50%);
+            z-index: 500;
         }
 
         h2 {
@@ -36,7 +32,7 @@
         }
     }
 
-    .banner::after {
+    .faq-banner::after {
         content: "";
         display: block;
         width: 100%;
@@ -49,8 +45,57 @@
         z-index: 110;
     }
 
-    .banner > * {
+    .faq-banner > * {
         z-index: 10;
         position: relative;
+    }
+    .faq-input {
+        margin-top: $space_25 * 2;
+        width: 100%;
+        padding: $space_10 $space_20 * 2;
+        margin-bottom: $space_20;
+        border-radius: 4px;
+        border: none;
+        background-color: $color_white;
+        font-weight: $font-weight_regular;
+        &::placeholder {
+            font-size: $font-size_18;
+            color: $color_contact_inputs;
+            font-weight: $font-weight_regular;
+            font-family: "Nexa", "sans-serif";
+
+        }
+    }
+}
+.headers {
+    display: none !important;
+}
+.faq-headers {
+    font-size: $font-size_24;
+    color: $color_black;
+    font-weight: $font-weight_bold;
+    padding-bottom: $space_25 * 2;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_36;
+    }
+}
+.icon-input {
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    &__text-field{
+        width: 100%;
+        padding: 5px 30px 5px 5px;
+    }
+    &__icon{
+        color: rgba(0,0,0,1);
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+        transform: translate(50%,-50%);
+    }
+    &__text-field:focus + &__icon{
+        color: $color_primary;
     }
 }

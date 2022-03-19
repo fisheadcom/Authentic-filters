@@ -1,28 +1,16 @@
-@import "global";
+@import "global.scss";
 
 
 
 .about {
-    .bullet-content {
-        .list-content {
-            li {
-                font-size: $font-size_14;
-                line-height: 3.6;
-                letter-spacing: 1.15px;
-            }
-        }
+    padding-top: 10vh;
+
+    .extra {
+        padding-top: $space_20*4;
     }
 }
 @media screen and (min-width: $desktop){
     .about {
-        .bullet-content {
-            .list-content {
-                li {
-                    font-size: $font-size_18;
-                    line-height: 4.5;
-                    letter-spacing: 1.75px;
-                }
-            }
-        }
+
     }
 }

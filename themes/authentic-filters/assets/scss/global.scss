@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'Nexa';
-    src: url("../fonts/Nexa-Bold.woff")format('truetype');
+    src: url("../fonts/Nexa-Bold.woff") format('truetype');
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Nexa';
-    src: url("../fonts/Nexa-Regular.woff")format('truetype');
+    src: url("../fonts/Nexa-Regular.woff") format('truetype');
     font-weight: 400;
 }
 
@@ -39,6 +40,7 @@ $space_35: 35px;
 //$space_70: $space_35 *2;
 //$space_100: $space_25 *4;
 $space_175: 175px;
+$space_265: 265px;
 
 
 //Colors
@@ -52,6 +54,7 @@ $color_star: #ED6565;
 $color_footer_links: #D9DBE1;
 $color_faq: #0A0A0A;
 $color_contact_inputs: #A3AAC2;
+$color_cards_shadow: #1C2F64;
 
 
 //Media Queries
@@ -71,12 +74,17 @@ $large_desktop: 1312px;
 html {
     font-size: 18px;
 }
+
 body {
     font-family: 'Nexa', sans-serif;
 }
 
 .main-page {
     padding-top: $space_175;
+    //padding: $space_175 $space_35;
+    @media SCREEN and (min-width: $desktop) {
+        padding-top: $space_265;
+    }
 }
 
 //Fonts for Mobiles
@@ -84,17 +92,15 @@ body {
 h1 {
     font-size: $font-size_24;
     font-weight: $font-weight_bold;
-    //line-height: $line_height_36;
     @media SCREEN and (min-width: $desktop) {
         font-size: $font-size_48;
-        //line-height: $line_height_72_2;
     }
 }
+
 h2 {
     font-size: $font-size_24;
     font-weight: $font-weight_bold;
     //line-height: $line_height_36;
-    padding-bottom: $space_35;
     @media SCREEN and (min-width: $desktop) {
         font-size: $font-size_36;
     }
@@ -130,12 +136,8 @@ h6 {
 
 p {
     font-size: $font-size_14;
-    //line-height: $line_height_20;
-    padding-bottom: $space_35;
-    //line-height: $line_height_20;
     @media SCREEN and (min-width: $desktop) {
         font-size: $font-size_18;
-        //line-height: $line_height_26;
     }
 }
 
@@ -149,25 +151,39 @@ p {
     padding: 11px 24px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: $font-weight_bold;
 }
 
 .learn {
+    font-size: $font-size_18;
     border-radius: 10px;
     border: 1px solid black;
     background: none;
     padding: 11px 24px;
     color: black;
     text-decoration: none;
+    font-weight: $font-weight_bold;
 }
+
+.load {
+    text-align: center;
+
+    #load-btn {
+        font-family: "Nexa", "sans-serif";
+        cursor: pointer;
+    }
+}
+
 .main-box {
-    padding: $space_35 * 2 $space_35;
+    padding: 0 $space_35;
 
     .first-image {
-        padding-bottom: $space_35;
+        padding-bottom: $space_25 * 2;
 
         img {
             width: 100%;
-            height: auto;
+            height: 40vh;
+            object-fit: cover;
         }
     }
 
@@ -178,6 +194,8 @@ p {
 
         p {
             padding-bottom: $space_20;
+            line-height: 1.5;
+            letter-spacing: 0.7px;
         }
 
         .button {
@@ -185,6 +203,7 @@ p {
         }
     }
 }
+
 .right {
     flex-direction: row-reverse !important;
 }
@@ -198,14 +217,17 @@ p {
 }
 
 
-
 .underline-header {
     background-color: $color_black;
     width: 10%;
     height: 4px;
     display: block;
-    margin-top: 10px;
+    margin-top: $space_10 + 5;
     margin-bottom: $space_20;
+    @media SCREEN and (min-width: $desktop) {
+        margin-top: $space_20 - 2;
+
+    }
 }
 
 .headers {
@@ -220,19 +242,21 @@ p {
 }
 
 
-
 .services-head {
+    padding-bottom: $space_10 + 5;
+
     .head {
         text-align: center;
         font-size: $font-size_18;
         letter-spacing: 2px;
         font-weight: $font-weight_regular;
+        text-transform: uppercase;
     }
 }
 
 
 .banner {
-    padding: $space_25 * 4 $space_35;
+    padding: $space_25 * 4 $space_35 0 $space_35;
     width: 100%;
 
     .first-content {
@@ -240,12 +264,18 @@ p {
             font-size: $font-size_24;
             font-weight: $font-weight_bold;
             letter-spacing: 1.25px;
-            line-height: 1.65;
+            line-height: 1.7;
         }
 
         p {
-            padding-top: $space_35;
-            padding-bottom: $space_35;
+            padding-top: $space_35 - 5;
+            //padding-bottom: $space_35;
+            line-height: 1.5;
+            letter-spacing: 0.7px;
+        }
+
+        .click {
+            padding-top: $space_20 * 2;
         }
     }
 
@@ -256,27 +286,33 @@ p {
     }
 }
 
-    .bullet-content {
-        .list-content {
-            li {
-                font-size: $font-size_14;
-                line-height: 3.6;
-                letter-spacing: 1.15px;
-            }
+.bullet-content {
+    .list-content {
+        padding-left: $space_20 ;
+        li {
+            font-size: $font-size_14;
+            //line-height: 3.6;
+            letter-spacing: 1.15px;
         }
     }
+}
+
 .main-content {
-    padding: $space_20*4 $space_35;
+    padding: 0 $space_35;
 
     p {
         padding: 0 !important;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
 
     }
 
 }
-@media SCREEN and (min-width: $desktop) {
+
+
+@media SCREEN and (min-width: $tablet) {
     .banner {
-        padding: $space_20*5 $space_20*4;
+        padding: $space_20*4 $space_20*2 0 $space_20*2;
 
         display: flex;
         flex-direction: row;
@@ -289,7 +325,7 @@ p {
         }
 
         .second-content {
-            width: 50%;
+            width: 55%;
 
             img {
                 display: unset;
@@ -299,8 +335,39 @@ p {
         }
     }
 
+}
+
+
+@media SCREEN and (min-width: $desktop) {
+    .banner {
+        padding: $space_20*5 $space_20*4 0 $space_20*4;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .first-content {
+            width: 40%;
+        }
+
+        .second-content {
+            width: 50%;
+
+            img {
+                display: unset;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .align-end {
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .main-box {
-        padding: $space_25 * 4 $space_35 * 2;
+        padding: 0 $space_35 * 2;
 
         display: flex;
         flex-direction: row;
@@ -309,6 +376,10 @@ p {
 
         .first-image {
             width: 40%;
+
+            img {
+                //height: auto;
+            }
         }
 
         .about-content {
@@ -316,17 +387,18 @@ p {
         }
     }
 
-        .bullet-content {
-            .list-content {
-                li {
-                    font-size: $font-size_18;
-                    line-height: 4.5;
-                    letter-spacing: 1.75px;
-                }
+    .bullet-content {
+        .list-content {
+            li {
+                font-size: $font-size_18;
+                padding-top: $space_20;
+                letter-spacing: 1.75px;
             }
         }
+    }
     .main-content {
-        padding: $space_25*4 $space_20*4;
+        padding: 0 $space_20*4;
+
         p {
             padding-top: $space_20 !important;
 

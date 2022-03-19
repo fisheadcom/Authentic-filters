@@ -1,7 +1,6 @@
 @import "global.scss";
 
 .faq-main {
-    padding-top: 8vh;
 
     .faq-content {
         padding: $space_35;
@@ -23,7 +22,6 @@
                     position: relative;
                     cursor: pointer;
                     margin-left: 0;
-                    color: $color_primary;
                 }
 
             }
@@ -54,12 +52,25 @@
 
         }
     }
+    .load-more{
+        display: none;
+    }
+    .heading-color {
+        color: $color_primary;
+    }
 }
 
 @media screen and (min-width: $desktop) {
     .faq-main {
         .faq-content {
             padding: $space_35 $space_20 * 4;
+        }
+        .load-more{
+            display: unset;
+
+        }
+        #load-btn {
+            display: none;
         }
     }
 }
