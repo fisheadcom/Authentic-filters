@@ -44,19 +44,19 @@
                 border-radius: 4px;
                 border: none;
                 background-color: $color_white;
-                font-weight: $font-weight_light;
+                font-weight: $font-weight_regular;
 
                 &::placeholder {
                     font-size: $font-size_18;
                     color: $color_contact_inputs;
-                    font-weight: $font-weight_light;
+                    font-weight: $font-weight_regular;
                     opacity: 0.5;
                 }
             }
             option {
                 font-size: $font-size_18;
                 color: $color_contact_inputs;
-                font-weight: $font-weight_light;
+                font-weight: $font-weight_regular;
                 opacity: 0.5;
             }
         }

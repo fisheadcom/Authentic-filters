@@ -44,7 +44,7 @@
                 width: 230px;
 
                 p {
-                    font-weight: $font-weight_light;
+                    font-weight: $font-weight_regular;
                     font-size: $font-size_14;
                     line-height: 24px;
                     color: $color_white;
@@ -86,7 +86,7 @@
 
                         color: $color_footer_links;
                         text-decoration: none;
-                        font-weight: $font-weight_light;
+                        font-weight: $font-weight_regular;
                         font-size: $font-size_12;
                         line-height: 26px;
                         padding-right: $space_20;
@@ -126,7 +126,7 @@
                     color: white;
                     padding-bottom: $space_35;
                     font-size: $font-size_20;
-                    font-weight: $font-weight_medium;
+                    font-weight: $font-weight_bold;
                 }
 
                 .footer-links {
@@ -136,7 +136,7 @@
                         color: $color_footer_links;
                         text-decoration: none;
                         font-size: $font-size_16;
-                        font-weight: $font-weight_light;
+                        font-weight: $font-weight_regular;
                         line-height: 2.6;
                     }
 
