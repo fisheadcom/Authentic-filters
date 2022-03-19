@@ -1,0 +1,28 @@
+@import "global";
+.table {
+    display: none;
+    width: 100%;
+
+    table {
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: left;
+        padding-left: $space_10;
+    }
+    td {
+        padding-left: $space_10;
+
+    }
+}
+@media screen and (min-width: $desktop){
+    .table {
+        display: unset;
+    }
+}

@@ -159,7 +159,32 @@ p {
     color: black;
     text-decoration: none;
 }
+.main-box {
+    padding: $space_35 * 2 $space_35;
 
+    .first-image {
+        padding-bottom: $space_35;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-content {
+        h1 {
+            padding-bottom: $space_20;
+        }
+
+        p {
+            padding-bottom: $space_20;
+        }
+
+        .button {
+            padding-top: $space_20;
+        }
+    }
+}
 .right {
     flex-direction: row-reverse !important;
 }
@@ -202,5 +227,110 @@ p {
         font-size: $font-size_18;
         letter-spacing: 2px;
         font-weight: $font-weight_regular;
+    }
+}
+
+
+.banner {
+    padding: $space_25 * 4 $space_35;
+    width: 100%;
+
+    .first-content {
+        h1 {
+            font-size: $font-size_24;
+            font-weight: $font-weight_bold;
+            letter-spacing: 1.25px;
+            line-height: 1.65;
+        }
+
+        p {
+            padding-top: $space_35;
+            padding-bottom: $space_35;
+        }
+    }
+
+    .second-content {
+        img {
+            display: none;
+        }
+    }
+}
+
+    .bullet-content {
+        .list-content {
+            li {
+                font-size: $font-size_14;
+                line-height: 3.6;
+                letter-spacing: 1.15px;
+            }
+        }
+    }
+.main-content {
+    padding: $space_20*4 $space_35;
+
+    p {
+        padding: 0 !important;
+
+    }
+
+}
+@media SCREEN and (min-width: $desktop) {
+    .banner {
+        padding: $space_20*5 $space_20*4;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .first-content {
+            width: 40%;
+
+
+        }
+
+        .second-content {
+            width: 50%;
+
+            img {
+                display: unset;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .main-box {
+        padding: $space_25 * 4 $space_35 * 2;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .first-image {
+            width: 40%;
+        }
+
+        .about-content {
+            width: 50%;
+        }
+    }
+
+        .bullet-content {
+            .list-content {
+                li {
+                    font-size: $font-size_18;
+                    line-height: 4.5;
+                    letter-spacing: 1.75px;
+                }
+            }
+        }
+    .main-content {
+        padding: $space_25*4 $space_20*4;
+        p {
+            padding-top: $space_20 !important;
+
+        }
+
     }
 }
