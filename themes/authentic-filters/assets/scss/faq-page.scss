@@ -49,7 +49,13 @@
         }
     }
 }
+.faq-ul {
+    padding-top: $space_20 - 5;
+    @media screen and (min-width: $desktop){
+        padding-top: $space_25 * 2;
 
+    }
+}
 .headers {
     display: none !important;
 }
@@ -58,7 +64,7 @@
     font-size: $font-size_24;
     color: $color_black;
     font-weight: $font-weight_bold;
-    padding-bottom: $space_25 * 2;
+    //padding-bottom: $space_25 * 2;
     @media SCREEN and (min-width: $desktop) {
         font-size: $font-size_36;
     }
