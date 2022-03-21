@@ -448,7 +448,9 @@ p {
     }
 
 }
-
+.padding-right {
+    padding-right: $space_20 + 5;
+}
 .headers-content {
     padding: 0 $space_35;
 }
