@@ -197,7 +197,6 @@ p {
 
 .main-box {
     padding: 0 $space_35;
-
     .first-image {
         padding-bottom: $space_25 * 2;
 
@@ -211,6 +210,8 @@ p {
     .about-content {
         h1 {
             padding-bottom: $space_20;
+            font-size: $font_size_24;
+
         }
 
         p {
@@ -238,11 +239,11 @@ p {
 }
 
 .left-shadow {
-    box-shadow: -15px 15px 0px 0px $color_box_shadow;
+    box-shadow: -29px 26px 0px 0px $color_box_shadow;
 }
 
 .right-shadow {
-    box-shadow: 15px 15px $color_box_shadow;
+    box-shadow: 29px 26px $color_box_shadow;
 }
 
 
@@ -280,6 +281,10 @@ p {
         letter-spacing: 2px;
         font-weight: $font-weight_regular;
         text-transform: uppercase;
+        @media SCREEN and (min-width: $desktop){
+            font-size: $font-size_24;
+
+        }
     }
 }
 
@@ -338,7 +343,9 @@ p {
     }
 
 }
-
+.line-height {
+    line-height: 1 !important;
+}
 
 @media SCREEN and (min-width: $tablet) {
     .banner {
@@ -370,7 +377,7 @@ p {
 
 @media SCREEN and (min-width: $desktop) {
     .banner {
-        padding: $space_20*5 $space_20*4 0 $space_20*4;
+        padding: $space_20*5 $space_20*4 + 10 0 $space_20*4 - 5;
 
         display: flex;
         flex-direction: row;
@@ -381,7 +388,8 @@ p {
         }
 
         .second-content {
-            width: 50%;
+            padding-right: $space_20 - 5;
+            width: 55%;
 
             img {
                 display: unset;
@@ -397,7 +405,7 @@ p {
         align-items: flex-end;
     }
     .main-box {
-        padding: 0 $space_35 * 2;
+        padding: 0 $space_35 * 2 + 5;
 
         display: flex;
         flex-direction: row;
@@ -414,6 +422,9 @@ p {
 
         .about-content {
             width: 50%;
+            h1 {
+                font-size: $font_size_36;
+            }
         }
     }
 
@@ -435,6 +446,7 @@ p {
         }
 
     }
+
 }
 
 .headers-content {

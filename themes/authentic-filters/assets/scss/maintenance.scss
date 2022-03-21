@@ -2,6 +2,7 @@
 
 .maintenance {
     padding-top: 10vh;
+
     .underline-header-maintenance {
         background-color: $color_black;
         width: 10%;
@@ -17,9 +18,11 @@
 }
 
 
-
-
-
 @media SCREEN and (min-width: $desktop) {
-
+    .maintenance-text {
+        display: none;
+    }
+    .click {
+        display: none;
+    }
 }
