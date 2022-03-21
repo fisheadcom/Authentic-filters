@@ -1,0 +1,11 @@
+plugin:
+    name: 'snapperit.interested::lang.plugin.name'
+    description: 'snapperit.interested::lang.plugin.description'
+    author: Snapperit
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Interested
+        url: snapperit/interested/interest
+        icon: icon-life-ring

@@ -1,0 +1,15 @@
+<form data-request="onSubmit" data-request-files data-request-flash>
+
+    <input type="hidden" name="_handler" value="onSave">
+    {{ form_token() }}
+    {{ form_sessionKey() }}
+
+    <label>Name</label>
+    <input type="text" name="name">
+
+    <label>Email</label>
+    <input type="text" name="email">
+
+    <br><br>
+    <button type="submit">GET IN TOUCH WITH US ></button>
+</form>

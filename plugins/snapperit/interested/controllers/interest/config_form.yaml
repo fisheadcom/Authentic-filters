@@ -1,0 +1,10 @@
+name: Interest
+form: $/snapperit/interested/models/interest/fields.yaml
+modelClass: Snapperit\Interested\Models\Interest
+defaultRedirect: snapperit/interested/interest
+create:
+    redirect: 'snapperit/interested/interest/update/:id'
+    redirectClose: snapperit/interested/interest
+update:
+    redirect: snapperit/interested/interest
+    redirectClose: snapperit/interested/interest
