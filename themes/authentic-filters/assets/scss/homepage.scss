@@ -207,6 +207,7 @@
                 }
             }
         }
+
         .main-services {
             .services {
                 .box-1 {
@@ -214,8 +215,9 @@
                         .card {
                             .rectangle {
                                 top: 13%;
-
+                                left: 47%;
                             }
+
                             .service-content {
                                 height: $space_175 - 25;
                             }
