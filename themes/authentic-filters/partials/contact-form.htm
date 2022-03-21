@@ -1,16 +1,14 @@
 <link rel="stylesheet" href="{{ ['assets/scss/contact-form.scss']|theme}}">
 
-
 <div class="contact-form-section">
     <div class="main-page">
         <div class="contact-image">
-            <div class="contact-background-image">
-                <img src="{{'assets/images/contact-form/AF_Clean_Kitchen.jpeg'|theme}}" alt="">
-            </div>
             <div class="contact-form">
                 <div class="contact-header">
                     <h2>What can we do for you?</h2>
-                    <p class="contact-header-para">We are ready to work on a project of any complexity, whether it’s a restaurant, pub, club,
+                    <p class="contact-header-para">We are ready to work on a project of any complexity, whether it’s
+                        a
+                        restaurant, pub, club,
                         hospital,
                         shopping centre, or sporting arena we have you covered.
                     </p>
@@ -18,27 +16,32 @@
                 <form>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="" class="contact-form-input" type="text" placeholder="Your Name">
-                            <select class="dropdown" type="select">
-                                <option disabled selected value>
-                                    Reasons for Contacting
-                                </option>
-                                <option value="front-end">General Enquiry</option>
-                                <option value="back-end">Filter Exchange</option>
-                                <option value="fullstack">Hood Cleaning</option>
-                                <option value="javaDeveloper">Duct & Fan Cleaning</option>
-                                <option value="designer">Maintenance Program</option>
-                            </select>
+                            <input name="" class="contact-form-input" type="text" placeholder="Your Name*">
+                            <div class="contact-dropdown-icon">
+                                <select class="dropdown" type="select">
+                                    <option disabled selected value>
+                                        Reasons for Contacting*
+                                    </option>
+                                    <option value="front-end">General Enquiry</option>
+                                    <option value="back-end">Filter Exchange</option>
+                                    <option value="fullstack">Hood Cleaning</option>
+                                    <option value="javaDeveloper">Duct & Fan Cleaning</option>
+                                    <option value="designer">Maintenance Program</option>
+                                </select>
+                                <img src="{{'assets/images/contact-form/ic_round-arrow-drop-down-circle.svg'|theme}}"
+                                     alt=""/>
+                            </div>
                             <input class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input class="contact-form-input" type="text" placeholder="Email">
+                            <input class="contact-form-input" type="text" placeholder="Email*">
                             <input class="contact-form-input" type="text" placeholder="Phone">
                             <input class="contact-form-input" type="text" placeholder="Address">
                         </div>
                     </div>
                     <div class="contact-form-message-field">
-                        <textarea class="contact-form-message-input" name="" id="" cols="30" rows="10">Message</textarea>
+                        <textarea class="contact-form-message-input" name="" id="" cols="30"
+                                  rows="10">Message</textarea>
                         <!--                        <input class="contact-form-message-input" type="text" placeholder="Message">-->
                         <div class="contact-suggestion-section">
                             <h5><span class="contact-star">*</span></h5>

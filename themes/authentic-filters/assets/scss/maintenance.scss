@@ -2,6 +2,18 @@
 
 .maintenance {
     padding-top: 10vh;
+    .underline-header-maintenance {
+        background-color: $color_black;
+        width: 10%;
+        height: 4px;
+        display: block;
+        margin-top: $space_10 + 5;
+        margin-bottom: $space_20;
+        @media SCREEN and (min-width: $desktop) {
+            //margin-top: $space_20 - 2;
+
+        }
+    }
 }
 
 

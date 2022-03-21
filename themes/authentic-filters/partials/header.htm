@@ -3,17 +3,27 @@
 
 <header>
     <div class="logo">
-        <a href="{{'home-page'|page}}"> <img src="{{'assets/images/logo/authentic-filters-logo.jpg'|theme}}" alt="" /></a>
+        <a href="{{'home-page'|page}}"> <img src="{{'assets/images/logo/authentic-filters-logo.jpg'|theme}}"
+                                             alt=""/></a>
     </div>
     <nav>
         <ul class="nav-links">
             <li>
-                <a class="nav-link" href="{{ 'services'|page }}">Services</a>
+                <a class="nav-link" href="{{ 'services'|page }}">
+                    <span class="{% if this.page.id == 'services' %} active {% endif %}">Services</span></a>
             </li>
-            <li><a class="nav-link" href="{{'about'|page}}">About Us</a></li>
-            <li><a class="nav-link" href="{{'maintenance'|page}}">Maintenance Program</a></li>
-            <li><a class="nav-link" href="{{'faq-page'|page}}">FAQ's</a></li>
-            <li><a class="nav-link click-button"  href="#">Get Started</a></li>
+
+            <li><a class="nav-link" href="{{'about'|page}}">
+                <span class="{% if this.page.id == 'about' %} active {% endif %}">About Us</span></a></li>
+
+            <li><a class="nav-link" href="{{'maintenance'|page}}">
+                <span class="{% if this.page.id == 'maintenance' %} active {% endif %}">Maintenance Program</span></a>
+            </li>
+
+            <li><a class="nav-link" href="{{'faq-page'|page}}">
+                <span class="{% if this.page.id == 'faq-page' %} active {% endif %}">FAQ's</span></a></li>
+
+            <li><a class="nav-link click-button" href="#">Get Started</a></li>
         </ul>
     </nav>
     <div class="burger">

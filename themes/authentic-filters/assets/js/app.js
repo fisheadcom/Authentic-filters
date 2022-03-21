@@ -38,7 +38,8 @@ $(document).ready(function () {
     $("#load-btn").on("click",function (){
         $(".load-more").css("display","unset");
         $("#load-btn").css("display","none")
-    })
+    });
+
 
 
 });

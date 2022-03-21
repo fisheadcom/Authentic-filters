@@ -165,12 +165,33 @@ p {
     font-weight: $font-weight_bold;
 }
 
+.active {
+    color: $color_secondary;
+}
+
 .load {
     text-align: center;
 
     #load-btn {
         font-family: "Nexa", "sans-serif";
         cursor: pointer;
+    }
+}
+
+.banner-paragraph {
+    font-size: $font-size_14 !important;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_24 !important;
+    }
+    @media SCREEN and (min-width: $large_desktop) {
+        font-size: $font-size_36 !important;
+    }
+}
+
+.banner-heading {
+    font-size: $font-size_24 !important;
+    @media SCREEN and (min-width: $desktop) {
+        font-size: $font-size_36 !important;
     }
 }
 
@@ -222,10 +243,10 @@ p {
     width: 10%;
     height: 4px;
     display: block;
-    margin-top: $space_10 + 5;
+    //margin-top: $space_10 + 5;
     margin-bottom: $space_20;
     @media SCREEN and (min-width: $desktop) {
-        margin-top: $space_20 - 2;
+        //margin-top: $space_20 - 2;
 
     }
 }
@@ -263,7 +284,7 @@ p {
         h1 {
             font-size: $font-size_24;
             font-weight: $font-weight_bold;
-            letter-spacing: 1.25px;
+            letter-spacing: 0.6px;
             line-height: 1.7;
         }
 
@@ -288,10 +309,11 @@ p {
 
 .bullet-content {
     .list-content {
-        padding-left: $space_20 ;
+        padding-left: $space_20;
+
         li {
             font-size: $font-size_14;
-            //line-height: 3.6;
+            line-height: 2.5;
             letter-spacing: 1.15px;
         }
     }
@@ -405,4 +427,8 @@ p {
         }
 
     }
+}
+
+.headers-content {
+    padding: 0 $space_35;
 }

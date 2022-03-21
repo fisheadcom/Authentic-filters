@@ -1,26 +1,19 @@
 @import "global.scss";
 
 .contact-image {
-    position: relative;
+    background-image: url("../images/contact-form/AF_Clean_Kitchen.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-size: cover;
 
-    .contact-background-image {
-        img {
-            width: 100%;
-            height: 90vh;
-            object-fit: cover;
-        }
-
-    }
 
     .contact-form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: $space_35;
-        text-align: center;
         width: 100%;
-        z-index: 120;
+        text-align: center;
+        padding: $space_35 $space_35 * 2;
+        margin: 0 auto;
 
         .contact-header {
             h2 {
@@ -48,34 +41,45 @@
                     border: none;
                     background-color: $color_white;
                     font-weight: $font-weight_regular;
+                    font-size: $font-size_18;
+                    font-family: "Nexa", "sans-serif";
+                    outline: none;
+
 
                     &::placeholder {
+                        //font-size: $font-size_18;
+                        color: $color_contact_inputs;
+                        font-weight: $font-weight_regular;
+                        //font-family: "Nexa", "sans-serif";
+                    }
+                }
+
+                .contact-dropdown-icon {
+                    position: relative;
+
+                    .dropdown {
                         font-size: $font-size_18;
                         color: $color_contact_inputs;
                         font-weight: $font-weight_regular;
                         font-family: "Nexa", "sans-serif";
-
-
-                        :after {
-                            z-index: 2225252525;
-                            content: '*';
-                            color: darkred;
-                            font-size: 3rem;
-
-                        }
+                        -webkit-appearance: none;
+                        width: 100%;
                     }
+                    img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translate(-50%, 50%);
+                        z-index: 0;
+                        display: block;
+                        pointer-events: none;
+                    }
+
+
                 }
 
+
             }
-
-        }
-
-        select {
-            font-size: $font-size_18;
-            color: $color_contact_inputs;
-            font-weight: $font-weight_regular;
-            font-family: "Nexa", "sans-serif";
-
         }
 
         .contact-form-message-field {
@@ -115,28 +119,10 @@
     }
 }
 
-.contact-image::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    z-index: 110;
-}
-
-.contact-image > * {
-    z-index: 10;
-    position: relative;
-}
-
 
 @media SCREEN and (min-width: $desktop) {
     .contact-form {
-        width: 80% !important;
+        width: 100% !important;
 
         .contact-flex {
             display: flex;
@@ -163,6 +149,17 @@
 
 @media SCREEN and (min-width: $desktop_xl) {
     .contact-form {
+        width: 80% !important;
+
+        .contact-header {
+            .contact-header-para {
+                width: 50% !important;
+            }
+        }
+    }
+}
+@media SCREEN and (min-width: $large_desktop) {
+    .contact-form {
         width: 60% !important;
 
         .contact-header {
@@ -173,26 +170,3 @@
     }
 }
 
-
-.centered{
-    float: none;
-    margin: 100px auto;
-}
-
-.form-group{
-    position: relative;
-    .palceholder{
-        position: absolute;
-        top: 7px;
-        left: 8px;
-        color: red;
-        display: none;
-    }
-    label{
-        font-weight: normal;
-        color: #B1B1B1 !important;
-    }
-    .star{
-        color: red;
-    }
-}

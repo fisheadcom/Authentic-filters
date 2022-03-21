@@ -1,54 +1,35 @@
 @import "global";
 
-
-.faqpage {
+.faq-page {
     padding-top: 10vh;
 
     .faq-banner {
-        position: relative;
-        text-align: center;
+        background-image: url("../images/faq/faq-background-image.jpg");
+        background-repeat: no-repeat;
         width: 100%;
         height: auto;
-        .image {
-            img {
-                width: 100%;
-                height: 40vh;
-                object-fit: cover;
-            }
-        }
+        object-fit: cover;
+        background-size: cover;
 
         .content-faq {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 500;
-        }
-
-        h2 {
-            z-index: 190;
+            padding: $space_175 $space_35 - 10;
+            margin: 0 auto;
+            text-align: center;
             width: 100%;
-            color: $color_white;
+            @media SCREEN and (min-width: $tablet) {
+                padding: $space_175 $space_175;
+            }
+            @media SCREEN and (min-width: $desktop) {
+                padding: $space_265 $space_265;
+            }
+
+            h2 {
+                color: $color_white;
+                width: 100%;
+            }
         }
     }
 
-    .faq-banner::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 98.5%;
-        background-color: #333;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        z-index: 110;
-    }
-
-    .faq-banner > * {
-        z-index: 10;
-        position: relative;
-    }
     .faq-input {
         margin-top: $space_25 * 2;
         width: 100%;
@@ -58,6 +39,7 @@
         border: none;
         background-color: $color_white;
         font-weight: $font-weight_regular;
+
         &::placeholder {
             font-size: $font-size_18;
             color: $color_contact_inputs;
@@ -67,9 +49,11 @@
         }
     }
 }
+
 .headers {
     display: none !important;
 }
+
 .faq-headers {
     font-size: $font-size_24;
     color: $color_black;
@@ -79,23 +63,37 @@
         font-size: $font-size_36;
     }
 }
+
 .icon-input {
     z-index: 0;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 60%;
+    margin: 0 auto;
     position: relative;
-    &__text-field{
+    text-align: center;
+    @media SCREEN and (min-width: $tablet) {
+        width: 80%
+    }
+    @media SCREEN and (min-width: $desktop) {
+        width: 60%
+    }
+    @media SCREEN and (min-width: $desktop_xl) {
+        width: 50%
+    }
+
+    &__text-field {
         width: 100%;
         padding: 5px 30px 5px 5px;
     }
-    &__icon{
-        color: rgba(0,0,0,1);
+
+    &__icon {
+        color: rgba(0, 0, 0, 1);
         position: absolute;
         bottom: 13%;
         left: 0;
-        transform: translate(50%,-50%);
+        transform: translate(50%, -50%);
     }
-    &__text-field:focus + &__icon{
+
+    &__text-field:focus + &__icon {
         color: $color_primary;
     }
 }

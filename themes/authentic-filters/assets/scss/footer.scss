@@ -148,17 +148,20 @@
                         .footer-form {
                             position: relative;
 
-                            input {
+                            .footer-input {
                                 border: none;
-                                background-color: $color_white;
-                                opacity: 0.3;
+                                background-color: #495983;
+                                opacity: 1;
                                 padding: $space_10;
                                 margin-top: $space_10;
                                 border-radius: 10px;
                                 position: relative;
 
                                 &::placeholder {
-                                    color: $color_footer_links;
+                                    font-size: $font-size_14;
+                                    color: $color_contact_inputs;
+                                    font-weight: $font-weight_regular;
+                                    font-family: "Nexa", "sans-serif";
                                 }
                             }
 
