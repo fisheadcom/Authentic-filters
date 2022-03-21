@@ -3,7 +3,7 @@
 .faq-main {
 
     .faq-content {
-        padding: $space_35;
+        padding: 0 $space_35;
 
         .faq-list {
             list-style: none;
@@ -63,7 +63,7 @@
 @media screen and (min-width: $desktop) {
     .faq-main {
         .faq-content {
-            padding: $space_35 $space_20 * 4;
+            padding: 0 $space_20 * 4;
         }
         .load-more{
             display: unset;

@@ -224,6 +224,14 @@ p {
         }
     }
 }
+.head-1 {
+    .head-1-about {
+        padding-bottom: 0 !important;
+    }
+    span {
+        margin-top: $space_20;
+    }
+}
 
 .right {
     flex-direction: row-reverse !important;

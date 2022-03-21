@@ -64,6 +64,9 @@
                         font-family: "Nexa", "sans-serif";
                         -webkit-appearance: none;
                         width: 100%;
+                        .dropdown-option{
+                            color: $color_black;
+                        }
                     }
                     img {
                         position: absolute;
