@@ -1,8 +1,4 @@
 fields:
-    name:
-        label: Name
-        span: auto
-        type: text
     email:
         label: Email
         span: auto
