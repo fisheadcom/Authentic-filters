@@ -150,7 +150,7 @@ title = "Home Page"
                         shopping centre, or sporting arena we have you covered.
                     </p>
                 </div>
-                <form>
+                <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
                             <input name="" class="contact-form-input" type="text" placeholder="Your Name*">
@@ -171,7 +171,7 @@ title = "Home Page"
                             <input class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input class="contact-form-input" type="text" placeholder="Email*">
+                            <input class="contact-form-input" type="email" placeholder="Email*">
                             <input class="contact-form-input" type="text" placeholder="Phone">
                             <input class="contact-form-input" type="text" placeholder="Address">
                         </div>
@@ -186,7 +186,7 @@ title = "Home Page"
                         </div>
                     </div>
 
-                    <button class="click-button">Submit</button>
+                    <button class="click-button" type="submit" data-attach-loading>Submit</button>
                 </form>
             </div>
         </div>
