@@ -12,7 +12,7 @@
     .contact-form {
         width: 100%;
         text-align: center;
-        padding: $space_35 $space_35 * 2;
+        padding: $space_25 * 4 $space_35 * 2;
         margin: 0 auto;
 
         .contact-header {
@@ -136,7 +136,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 75%;
+            width: 90%;
             margin: 0 auto;
 
             .contact-form-fields {
@@ -148,7 +148,7 @@
         }
 
         .contact-form-message-field {
-            width: 75%;
+            width: 90%;
             margin: 0 auto;
             padding: 0 0 0 $space_35;
         }
@@ -168,11 +168,11 @@
 }
 @media SCREEN and (min-width: $large_desktop) {
     .contact-form {
-        width: 60% !important;
+        width: 55% !important;
 
         .contact-header {
             .contact-header-para {
-                width: 50% !important;
+                width: 60% !important;
             }
         }
     }
