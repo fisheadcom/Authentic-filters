@@ -1,4 +1,4 @@
-@import "global.scss";
+@import "global";
 
 .footer-main {
     width: 100%;
@@ -6,16 +6,21 @@
     padding: $space_35 * 2 $space_35;
 
     .footer-section {
-
+            text-align: center;
         .footer-logo-section {
             width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             .footer-logo {
-                width: 70%;
+                width: 100%;
                 padding-bottom: $space_35;
 
                 img {
-                    width: 170px;
+                    width: 200px;
                     height: auto;
                 }
             }
@@ -23,13 +28,12 @@
             .footer-social-links {
                 display: flex;
                 flex-direction: row;
-                width: 170px;
+                width: 100px;
                 justify-content: space-between;
+                padding-bottom: $space_35;
 
                 li {
                     list-style: none;
-                    //width: 24%;
-                    //height: 24%;
                     a {
                         img {
                             width: 32px;
@@ -38,14 +42,68 @@
                     }
                 }
             }
+        }
 
+
+        .footer-touch-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .footer-get-in-touch {
+                text-align: center;
+                form {
+                    .footer-headers {
+                        color: $color_white;
+                        padding-bottom: $space_35;
+                        font-size: $font-size_20;
+                        font-weight: $font-weight_bold;
+                    }
+                    .footer-form {
+                        position: relative;
+                        width: 100%;
+
+                        .footer-input {
+                            border: none;
+                            background-color: #495983;
+                            opacity: 1;
+                            padding: $space_10;
+                            margin-top: $space_10;
+                            border-radius: 10px;
+                            position: relative;
+                            width: 100%;
+
+                            &::placeholder {
+                                font-size: $font-size_14;
+                                color: $color_contact_inputs;
+                                font-weight: $font-weight_regular;
+                                font-family: "Nexa", "sans-serif";
+                            }
+                        }
+
+                        button {
+                            position: absolute;
+                            top: 5px;
+                            right: 0;
+                            background: transparent;
+                            border: none;
+                            transform: translate(-50%, 50%);
+
+                            img {
+                                width: 22px;
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+            }
             .footer-copyright {
                 padding-top: 30px;
                 width: 230px;
+                text-align: left;
 
                 p {
                     font-weight: $font-weight_regular;
-                    font-size: $font-size_14;
+                    font-size: $font-size_12;
                     line-height: 24px;
                     color: $color_white;
                     width: auto;
@@ -67,37 +125,32 @@
                 }
             }
         }
-
-        .footer-mobile-company-links {
-            width: 100%;
-            padding-top: $space_35;
-
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                flex-wrap: wrap;
-
-
-                li {
-                    list-style: none;
-
-                    a {
-
-                        color: $color_footer_links;
-                        text-decoration: none;
-                        font-weight: $font-weight_regular;
-                        font-size: $font-size_12;
-                        line-height: 26px;
-                        padding-right: $space_20;
-                    }
-                }
-            }
-        }
-
         .footer-desktop-company-links {
-            display: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: left;
+            padding-bottom: $space_35;
+
+            .footer-headers {
+                color: $color_white;
+                padding-bottom: $space_35;
+                font-size: $font-size_20;
+                font-weight: $font-weight_bold;
+            }
+
+            .footer-links {
+                list-style: none;
+
+                a {
+                    color: $color_footer_links;
+                    text-decoration: none;
+                    font-size: $font-size_12;
+                    font-weight: $font-weight_regular;
+                    line-height: 2.6;
+                }
+
+            }
         }
     }
 }
@@ -115,71 +168,53 @@
 
             .footer-logo-section {
                 width: 60%;
-
             }
+            .footer-touch-section {
 
-            .footer-desktop-company-links {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-
-                .footer-headers {
-                    color: white;
-                    padding-bottom: $space_35;
-                    font-size: $font-size_20;
-                    font-weight: $font-weight_bold;
+                .footer-get-in-touch {
+                    text-align: left;
+                    form {
+                        .footer-form {
+                            width: 100%;
+                        }
+                    }
                 }
+                .footer-copyright {
+                    padding-top: 30px;
+                    width: 230px;
 
+                    p {
+                        font-weight: $font-weight_regular;
+                        font-size: $font-size_14;
+                        line-height: 24px;
+                        color: $color_white;
+                        width: auto;
+                        padding: 0 !important;
+                    }
+
+                    .copy {
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .line {
+                            justify-content: flex-end;
+                            border: 1px solid white;
+                            width: 75px;
+                            background-color: $color_white;
+                        }
+                    }
+                }
+            }
+            .footer-desktop-company-links {
                 .footer-links {
-                    list-style: none;
-
                     a {
                         color: $color_footer_links;
                         text-decoration: none;
                         font-size: $font-size_16;
                         font-weight: $font-weight_regular;
                         line-height: 2.6;
-                    }
-
-                }
-
-
-                .footer-get-in-touch {
-                    form {
-                        .footer-form {
-                            position: relative;
-
-                            .footer-input {
-                                border: none;
-                                background-color: #495983;
-                                opacity: 1;
-                                padding: $space_10;
-                                margin-top: $space_10;
-                                border-radius: 10px;
-                                position: relative;
-
-                                &::placeholder {
-                                    font-size: $font-size_14;
-                                    color: $color_contact_inputs;
-                                    font-weight: $font-weight_regular;
-                                    font-family: "Nexa", "sans-serif";
-                                }
-                            }
-
-                            button {
-                                position: absolute;
-                                top: 5px;
-                                right: 0;
-                                background: transparent;
-                                border: none;
-                                transform: translate(-50%, 50%);
-
-                                img {
-                                    width: 22px;
-                                    background: transparent;
-                                }
-                            }
-                        }
                     }
                 }
             }
