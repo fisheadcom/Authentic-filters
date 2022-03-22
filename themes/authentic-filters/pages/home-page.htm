@@ -153,9 +153,9 @@ title = "Home Page"
                 <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="" class="contact-form-input" type="text" placeholder="Your Name*">
+                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*">
                             <div class="contact-dropdown-icon">
-                                <select class="dropdown" type="select">
+                                <select name="reasons_for_contacting" class="dropdown" type="select">
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
@@ -168,18 +168,17 @@ title = "Home Page"
                                 <img src="{{'assets/images/contact-form/ic_round-arrow-drop-down-circle.svg'|theme}}"
                                      alt=""/>
                             </div>
-                            <input class="contact-form-input" type="text" placeholder="Business Name">
+                            <input name="business_name" class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input class="contact-form-input" type="email" placeholder="Email*">
-                            <input class="contact-form-input" type="text" placeholder="Phone">
-                            <input class="contact-form-input" type="text" placeholder="Address">
+                            <input name="email" class="contact-form-input" type="email" placeholder="Email*">
+                            <input name="phone" class="contact-form-input" type="text" placeholder="Phone">
+                            <input name="address" class="contact-form-input" type="text" placeholder="Address">
                         </div>
                     </div>
                     <div class="contact-form-message-field">
-                        <textarea class="contact-form-message-input" name="" id="" cols="30"
+                        <textarea class="contact-form-message-input" name="message" id="" cols="30"
                                   rows="10" placeholder="Message"></textarea>
-                        <!--                        <input class="contact-form-message-input" type="text" placeholder="Message">-->
                         <div class="contact-suggestion-section">
                             <h5><span class="contact-star">*</span></h5>
                             <h5 class="contact-suggestion">Indicates a required field</h5>
