@@ -199,7 +199,7 @@ p {
     padding: 0 $space_35;
     .first-image {
         padding-bottom: $space_25 * 2;
-        padding-right: $space_10 - 5;
+        padding-right: $space_10 - 4;
         @media SCREEN and (min-width: $tablet) {
             padding-right: $space_25;
         }

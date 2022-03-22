@@ -55,7 +55,9 @@
     display: none;
 }
 .services-table-section {
-    padding-top: $space_35 * 4;
+    @media screen and (min-width: $desktop) {
+        padding-top: $space_35 * 4;
+    }
     .table-content {
         padding-top: $space_35 - 5;
     }
@@ -101,4 +103,12 @@
     .click {
         display: none;
     }
+}
+
+.filter-main-box{
+    position: relative;
+    #filter-box{
+        margin-top: 100px;
+    }
+
 }
