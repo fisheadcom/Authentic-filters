@@ -371,13 +371,14 @@ title = "Services"
                 <div >
                     <div class="footer-get-in-touch">
 
-                        <form action="">
+                        <form data-request="onSubmit" data-request-files data-request-flash autocomplete="new-password">
                             <p class="footer-headers">Lets get in touch!</p>
-
-
+                            <input type="hidden" name="_handler" value="onSave">
+                            {{ form_token() }}
+                            {{ form_sessionKey() }}
                             <div class="footer-form">
-                                <input class="footer-input" type="text" placeholder="Your email address"/>
-                                <button><img src="{{'assets/images/footer/send-arrow.svg'|theme}}" alt=""/></button>
+                                <input name="email" class="footer-input" type="email" placeholder="Your email address" autocomplete="new-password"/>
+                                <button type="submit"><img src="{{'assets/images/footer/send-arrow.svg'|theme}}" alt=""/></button>
                             </div>
                         </form>
 

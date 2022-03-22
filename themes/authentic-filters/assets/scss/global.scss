@@ -487,3 +487,13 @@ p {
     //top: -50px;
     top: 100px;
 }
+
+.footer-input:-webkit-autofill,
+.footer-input:-webkit-autofill:hover,
+.footer-input:-webkit-autofill:focus,
+.footer-input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #495983 inset !important;
+    //color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+

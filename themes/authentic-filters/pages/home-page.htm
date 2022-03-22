@@ -239,21 +239,19 @@ title = "Home Page"
                 <div >
                     <div class="footer-get-in-touch">
 
-<form data-request="onSubmit" data-request-files data-request-flash>
+                        <form data-request="onSubmit" data-request-files data-request-flash autocomplete="nope">
                             <p class="footer-headers">Lets get in touch!</p>
-
-
-    <input type="hidden" name="_handler" value="onSave">
-    {{ form_token() }}
-    {{ form_sessionKey() }}
-                <div class="footer-form">
-                                <input name="email" class="footer-input" type="email" placeholder="Your email address"/>
-                                <button type="submit"><img src="{{'assets/images/footer/send-arrow.svg'|theme}}" alt=""/></button>
+                            <input type="hidden" name="_handler" value="onSave">
+                            {{ form_token() }}
+                            {{ form_sessionKey() }}
+                            <div class="footer-form">
+                                <input name="email" class="footer-input" type="email" placeholder="Your email address"
+                                       autocomplete="nope"/>
+                                <button type="submit"><img src="{{'assets/images/footer/send-arrow.svg'|theme}}"
+                                                           alt=""/></button>
                             </div>
-</form>
-
-
                         </form>
+
 
                     </div>
                     <div class="footer-copyright">
