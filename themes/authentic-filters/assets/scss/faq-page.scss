@@ -4,7 +4,10 @@
     padding-top: 10vh;
 
     .faq-banner {
-        background-image: url("../images/faq/faq-background-image.jpg");
+        background-image: url("../images/faq/faq-background-image-mobile.jpg");
+        @media SCREEN and (min-width: $tablet){
+            background-image: url("../images/faq/faq-background-image.jpg");
+        }
         background-repeat: no-repeat;
         width: 100%;
         height: auto;
