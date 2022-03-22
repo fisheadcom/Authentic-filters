@@ -16,7 +16,7 @@ title = "Home Page"
                 kitchen
                 cleaning services. </p>
             <div class="click">
-                <a href="#" class="click-button">Get Started</a>
+                <a href="#contact" class="click-button">Get Started</a>
             </div>
         </div>
         <div class="second-content">
@@ -29,10 +29,10 @@ title = "Home Page"
             <div class="services">
                 <div class="box-1">
                     <div class="services-head">
-                        <h3 class="head">Services</h3>
+                        <h3 class="head">Clean, Exchange & Maintain</h3>
                     </div>
                     <div class="head-services">
-                        <h2 class="headers-content">We Provide 3 Options of Cleaning Services For Your Kitchen</h2>
+                        <h2 class="headers-content">We provide a range of options for Cleaning your Commercial Kitchen</h2>
                     </div>
                     <div class="cards">
                         <div class="card">
@@ -42,7 +42,7 @@ title = "Home Page"
                                 <h3>Filter Exchange </h3>
                                 <p>Remove and exchange with clean filters. </p>
                             </div>
-                            <a id="card-learn" href="{{ 'services'|page }}">Learn More</a>
+                            <a id="card-learn" href="/services#filter">Learn More</a>
                             <div class="background_number"><h1>01</h1></div>
                         </div>
                         <div class="card">
@@ -52,7 +52,7 @@ title = "Home Page"
                                 <h3>Rangehoods Clean</h3>
                                 <p>Clean canopies including all interior and exterior chambers and surfaces. </p>
                             </div>
-                            <a href="{{ 'services'|page }}"">Learn More</a>
+                            <a href="/services#hood">Learn More</a>
                             <div class="background_number"><h1>02</h1></div>
                         </div>
                         <div class="card">
@@ -62,7 +62,7 @@ title = "Home Page"
                                 <h3>Deep Clean </h3>
                                 <p>Clean exhaust fan blades, casing and outlet duct section where accessible.</p>
                             </div>
-                            <a href="{{ 'services'|page }}"">Learn More</a>
+                            <a href="/services#duct">Learn More</a>
                             <div class="background_number"><h1>03</h1></div>
                         </div>
                     </div>
@@ -159,11 +159,11 @@ title = "Home Page"
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
-                                    <option class="dropdown-option" value="front-end">General Enquiry</option>
-                                    <option class="dropdown-option" value="back-end">Filter Exchange</option>
-                                    <option class="dropdown-option" value="fullstack">Hood Cleaning</option>
-                                    <option class="dropdown-option" value="javaDeveloper">Duct & Fan Cleaning</option>
-                                    <option class="dropdown-option" value="designer">Maintenance Program</option>
+                                    <option class="dropdown-option" value="General Enquiry">General Enquiry</option>
+                                    <option class="dropdown-option" value="Filter Exchange">Filter Exchange</option>
+                                    <option class="dropdown-option" value="Hood Cleaning">Hood Cleaning</option>
+                                    <option class="dropdown-option" value="Duct & Fan Cleaning">Duct & Fan Cleaning</option>
+                                    <option class="dropdown-option" value="Maintenance Program">Maintenance Program</option>
                                 </select>
                                 <img src="{{'assets/images/contact-form/ic_round-arrow-drop-down-circle.svg'|theme}}"
                                      alt=""/>
@@ -172,12 +172,12 @@ title = "Home Page"
                         </div>
                         <div class="contact-form-fields">
                             <input name="email" class="contact-form-input" type="email" placeholder="Email*">
-                            <input name="phone" class="contact-form-input" type="text" placeholder="Phone">
+                            <input name="phone" class="contact-form-input" type="number" placeholder="Phone">
                             <input name="address" class="contact-form-input" type="text" placeholder="Address">
                         </div>
                     </div>
                     <div class="contact-form-message-field">
-                        <textarea class="contact-form-message-input" name="message" id="" cols="30"
+                        <textarea type="text" class="contact-form-message-input" name="content" id="" cols="30"
                                   rows="10" placeholder="Message"></textarea>
                         <div class="contact-suggestion-section">
                             <h5><span class="contact-star">*</span></h5>

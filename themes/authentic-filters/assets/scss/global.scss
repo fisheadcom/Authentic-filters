@@ -463,3 +463,10 @@ p {
 .headers-content {
     padding: 0 $space_35;
 }
+.main-box{
+    position: relative;
+}
+.transfer {
+    position: absolute;
+    top: -100px;
+}

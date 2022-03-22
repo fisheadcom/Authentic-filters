@@ -1,6 +1,8 @@
 url = "/maintenance"
 layout = "default"
 title = "Maintenance"
+
+[contactform]
 ==
 <link rel="stylesheet" href="{{ ['assets/scss/maintenance.scss']|theme}}">
 <link rel="stylesheet" href="{{ ['assets/scss/contact-form.scss']|theme}}">
@@ -19,7 +21,7 @@ title = "Maintenance"
                 meet individual requirements. Our system schedules the appointments automatically. You don’t have to
                 remember! </span></p>
             <div class="click">
-                <a href="#" class="click-button">Get Started</a>
+                <a href="#contact" class="click-button">Get Started</a>
             </div>
         </div>
         <div class="second-content">
@@ -50,6 +52,7 @@ title = "Maintenance"
 </div>
 
 
+<!--contact-form-->
 <div class="contact-form-section">
     <a href="" id="contact"></a>
     <div class="main-page">
@@ -64,43 +67,42 @@ title = "Maintenance"
                         shopping centre, or sporting arena we have you covered.
                     </p>
                 </div>
-                <form>
+                <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="" class="contact-form-input" type="text" placeholder="Your Name*">
+                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*">
                             <div class="contact-dropdown-icon">
-                                <select class="dropdown" type="select">
+                                <select name="reasons_for_contacting" class="dropdown" type="select">
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
-                                    <option class="dropdown-option" value="front-end">General Enquiry</option>
-                                    <option class="dropdown-option" value="back-end">Filter Exchange</option>
-                                    <option class="dropdown-option" value="fullstack">Hood Cleaning</option>
-                                    <option class="dropdown-option" value="javaDeveloper">Duct & Fan Cleaning</option>
-                                    <option class="dropdown-option" value="designer">Maintenance Program</option>
+                                    <option class="dropdown-option" value="General Enquiry">General Enquiry</option>
+                                    <option class="dropdown-option" value="Filter Exchange">Filter Exchange</option>
+                                    <option class="dropdown-option" value="Hood Cleaning">Hood Cleaning</option>
+                                    <option class="dropdown-option" value="Duct & Fan Cleaning">Duct & Fan Cleaning</option>
+                                    <option class="dropdown-option" value="Maintenance Program">Maintenance Program</option>
                                 </select>
                                 <img src="{{'assets/images/contact-form/ic_round-arrow-drop-down-circle.svg'|theme}}"
                                      alt=""/>
                             </div>
-                            <input class="contact-form-input" type="text" placeholder="Business Name">
+                            <input name="business_name" class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input class="contact-form-input" type="text" placeholder="Email*">
-                            <input class="contact-form-input" type="text" placeholder="Phone">
-                            <input class="contact-form-input" type="text" placeholder="Address">
+                            <input name="email" class="contact-form-input" type="email" placeholder="Email*">
+                            <input name="phone" class="contact-form-input" type="number" placeholder="Phone">
+                            <input name="address" class="contact-form-input" type="text" placeholder="Address">
                         </div>
                     </div>
                     <div class="contact-form-message-field">
-                        <textarea class="contact-form-message-input" name="" id="" cols="30"
+                        <textarea type="text" class="contact-form-message-input" name="content" id="" cols="30"
                                   rows="10" placeholder="Message"></textarea>
-                        <!--                        <input class="contact-form-message-input" type="text" placeholder="Message">-->
                         <div class="contact-suggestion-section">
                             <h5><span class="contact-star">*</span></h5>
                             <h5 class="contact-suggestion">Indicates a required field</h5>
                         </div>
                     </div>
 
-                    <button class="click-button">Submit</button>
+                    <button class="click-button" type="submit" data-attach-loading>Submit</button>
                 </form>
             </div>
         </div>

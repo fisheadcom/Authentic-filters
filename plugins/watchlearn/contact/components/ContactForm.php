@@ -33,7 +33,7 @@ class ContactForm extends ComponentBase
             'email' => 'required',
             'phone' => 'required',
             'address' => 'required',
-            'message' => 'required'
+            'content' => 'required'
 
         ];
 
@@ -42,11 +42,11 @@ class ContactForm extends ComponentBase
         if ($validator->fails()) {
             throw new ValidationException($validator);
         } else {
-            $vars = ['firstname' => Input::get('firstname'), 'reasons_for_contacting' => Input::get('reasons_for_contacting'), 'business_name' => Input::get('business_name'), 'email' => Input::get('email'), 'phone' => Input::get('phone'), 'address' => Input::get('address'), 'message' => Input::get('message')];
+            $vars = ['firstname' => Input::get('firstname'), 'reasons_for_contacting' => Input::get('reasons_for_contacting'), 'business_name' => Input::get('business_name'), 'email' => Input::get('email'), 'phone' => Input::get('phone'), 'address' => Input::get('address'), 'content' => Input::get('content')];
 
             Mail::send('watchlearn.contact::mail.message', $vars, function ($message) {
 
-                $message->to('saibabu@snapperit.com', 'Admin Person');
+                $message->to('info@authenticfilters.com.au', 'Admin Person');
                 $message->subject('New message from contact form');
 
             });
