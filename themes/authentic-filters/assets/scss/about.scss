@@ -13,4 +13,11 @@
     .click {
         display: none;
     }
+    .box-shadow-right-pad {
+        padding-right: $space_35 - 5;
+    }
+    .box-shadow-left-pad {
+        padding-left: $space_35 - 5;
+
+    }
 }

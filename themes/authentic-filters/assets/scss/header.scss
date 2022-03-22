@@ -13,6 +13,7 @@ header {
     position: fixed;
     justify-content: space-around;
     z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 15px;
 
     .logo {
         flex: 2;
@@ -21,7 +22,13 @@ header {
 
         img {
             width: 140px;
-            height: 33px;
+            height: auto;
+            @media screen and (min-width: $desktop) {
+                width: 170px;
+            }
+            @media screen and (min-width: $desktop_xl) {
+                width: 230px;
+            }
         }
     }
 
@@ -137,17 +144,6 @@ header {
     }
 }
 
-//
-//@media SCREEN and (min-width: $desktop){
-//    header {
-//        nav {
-//            flex: 4;
-//        }
-//        .logo {
-//            flex: 1.5;
-//        }
-//    }
-//}
 @media SCREEN and (min-width: $desktop_xl){
     header {
         nav {

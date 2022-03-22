@@ -15,7 +15,17 @@
 .services-side-head {
     margin-bottom: $space_20 * 3;
 }
-
+.services-important-section {
+    display: none;
+    @media SCREEN and (min-width: $desktop) {
+        display: unset;
+    }
+}
+.services-banner-content {
+    @media SCREEN and (min-width: $desktop) {
+        display: none;
+    }
+}
 .table {
     display: none;
     width: 100%;
