@@ -23,7 +23,6 @@ class Interested extends ComponentBase
     public function onSubmit(){
         $validator = Validator::make(
             $form = Input::all(), [
-                'name' => 'required',
                 'email' => 'required'
             ]
         );
