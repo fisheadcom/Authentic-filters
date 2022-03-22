@@ -43,6 +43,34 @@
 ></script>
 
 <script type="text/javascript" src="{{'assets/js/app.js'|theme}}"></script>
+<script>
+    $(document).ready(function() {
+        jQuery.expr[':'].Contains = function(a, i, m) {
+            return jQuery(a).text().toUpperCase()
+                .indexOf(m[3].toUpperCase()) >= 0;
+        };
+
+
+        jQuery.expr[':'].contains = function(a, i, m) {
+            return jQuery(a).text().toUpperCase()
+                .indexOf(m[3].toUpperCase()) >= 0;
+        };
+
+        $('#search').keyup(function(e) {
+            var s = $(this).val().trim();
+
+            if (s === '') {
+                $('#result li').show();
+                return true;
+            }
+            $('#result li:not(:contains(' + s + '))').hide();
+
+            $('#result li:contains(' + s + ')').show();
+            return true;
+        });
+
+    });
+</script>
 {% framework extras %}
 {% scripts %}
 
