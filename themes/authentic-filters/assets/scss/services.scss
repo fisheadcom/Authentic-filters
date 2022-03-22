@@ -105,10 +105,34 @@
     }
 }
 
-.filter-main-box{
+/*
+.filter-main-block,
+.hood-cleaning-main{
     position: relative;
-    #filter-box{
-        margin-top: 100px;
+    .filter-main-block-inn {
+        padding-top: 100px;
     }
-
 }
+.hood-cleaning-main-inn{
+    padding-top: 240px;
+}
+.service-page{
+    @media SCREEN and (min-width: $desktop) {
+        padding-top: 165px !important ;
+    }
+}
+.hood-page{
+    @media SCREEN and (min-width: $desktop) {
+        padding-top: 25px !important ;
+    }
+}
+*/
+/*.main-box{
+    position: relative;
+    > a.transfer{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+}*/

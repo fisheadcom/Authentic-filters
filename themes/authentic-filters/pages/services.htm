@@ -31,39 +31,43 @@ title = "Services"
 
     <div class="service-second-part">
         <div class="main-page">
-            <div class="services-head">
-                <h3 class="head">SERVICES</h3>
-            </div>
-
-            <div class="services-side-head">
-                <h2 class="headers-content">We Provide 3 Options of Cleaning Services For Your Kitchen</h2>
-            </div>
-            
-                <div class="main-box" id="filter-box">
-                    <a href="#" class="transfer" id="filter"></a>
-                    <div class="first-image">
-                        <img class="right-shadow" src="{{'assets/images/services/dirty-clean.jpg'|theme}}" alt=""/>
+                    <div class="services-head">
+                        <h3 class="head">SERVICES</h3>
                     </div>
-                    <div class="about-content align-end">
-                        <h1 class="line-height">Filter Exchange Program</h1><span class="underline-header "></span>
-                        <p>The entire kitchen exhaust system works most efficiently with filters that are not clogged
-                            with
-                            grease or oil, preventing a smoky kitchen, or not allowing fumes to get away. Depending on
-                            the
-                            type
-                            of kitchen and cooking processes we ascertain the optimum, cost-effective filter exchange
-                            schedule. <span class="filter">
+
+                    <div class="services-side-head">
+                        <h2 class="headers-content">We Provide 3 Options of Cleaning Services For Your Kitchen</h2>
+                    </div>
+
+                    <div class="main-box">
+                        <a href="#" class="transfer" id="filter"></a>
+                        <div class="first-image">
+                            <img class="right-shadow" src="{{'assets/images/services/dirty-clean.jpg'|theme}}" alt=""/>
+                        </div>
+                        <div class="about-content align-end">
+                            <h1 class="line-height">Filter Exchange Program</h1><span class="underline-header "></span>
+                            <p>The entire kitchen exhaust system works most efficiently with filters that are not clogged
+                                with
+                                grease or oil, preventing a smoky kitchen, or not allowing fumes to get away. Depending on
+                                the
+                                type
+                                of kitchen and cooking processes we ascertain the optimum, cost-effective filter exchange
+                                schedule. <span class="filter">
                         Our aim is to minimise any disruption to your business and our contractors will work with you
                         whenever possible to arrange suitable times for exchange. How often should you exchange kitchen
                         filters? The exchange frequency depends on the volume and style of cooking in your kitchen. </span>
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
+
+
 
 
         </div>
     </div>
-    <div class="main-page">
+
+
+    <div class="main-page service-page">
         <div class="main-box">
             <div class="bullet-content">
                 <div class="bullet-head">
@@ -130,28 +134,29 @@ title = "Services"
             </div>
         </div>
     </div>
-    <div class="main-page">
+    <div class="main-page hood-page">
         <div class="main-box right">
-            <a href="" class="transfer" id="hood"></a>
+            <a href="#" class="transfer" id="hood"></a>
 
-            <div class="first-image padding-right">
-                <img class="right-shadow" src="{{'assets/images/services/CloseUp.jpg'|theme}}" alt=""/>
-            </div>
-            <div class="about-content ">
-                <div class="head-1">
-                    <h1 class="head-1-about line-height">Hood Cleaning Services</h1>
-                    <span class="underline-header "></span>
-                </div>
-                <p>Rangehoods are extremely important in a commercial kitchen. When functioning correctly they provide a
-                    cleaner work environment by improving air quality, controlling heat and steam and minimising kitchen
-                    odour. Depending on the volume and type of cooking, commercial kitchen hoods or canopies quickly
-                    accumulate oil and grease and require regular cleaning. Often this build up is not visible. It’s no
-                    good
-                    having clean filters but your gutters are overflowing with oil as this increases the likelihood of a
-                    fire and shortens the life of the filters.
-                </p>
+                    <div class="first-image padding-right">
+                        <img class="right-shadow" src="{{'assets/images/services/CloseUp.jpg'|theme}}" alt=""/>
+                    </div>
 
-            </div>
+                    <div class="about-content ">
+                        <div class="head-1">
+                            <h1 class="head-1-about line-height">Hood Cleaning Services</h1>
+                            <span class="underline-header "></span>
+                        </div>
+                        <p>Rangehoods are extremely important in a commercial kitchen. When functioning correctly they provide a
+                            cleaner work environment by improving air quality, controlling heat and steam and minimising kitchen
+                            odour. Depending on the volume and type of cooking, commercial kitchen hoods or canopies quickly
+                            accumulate oil and grease and require regular cleaning. Often this build up is not visible. It’s no
+                            good
+                            having clean filters but your gutters are overflowing with oil as this increases the likelihood of a
+                            fire and shortens the life of the filters.
+                        </p>
+                    </div>
+
         </div>
     </div>
     <div class="services-table-section">
@@ -281,15 +286,15 @@ title = "Services"
                         a
                         restaurant, pub, club,
                         hospital,
-                        shopping centre, or sporting arena we have you covered.
+                        shopping centre, or sporting arena, we have you covered.
                     </p>
                 </div>
                 <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*">
+                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*" required autocomplete="new-password">
                             <div class="contact-dropdown-icon">
-                                <select name="reasons_for_contacting" class="dropdown" type="select">
+                                <select name="reasons_for_contacting" class="dropdown" type="select" required>
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
@@ -305,7 +310,7 @@ title = "Services"
                             <input name="business_name" class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input name="email" class="contact-form-input" type="email" placeholder="Email*">
+                            <input name="email" class="contact-form-input" type="email" placeholder="Email*" required autocomplete="new-password">
                             <input name="phone" class="contact-form-input" type="number" placeholder="Phone">
                             <input name="address" class="contact-form-input" type="text" placeholder="Address">
                         </div>
@@ -349,7 +354,7 @@ title = "Services"
                         <p class="footer-headers">Company</p>
                         <li class="footer-links"><a href="{{ 'about'|page }}">About us</a></li>
                         <li class="footer-links"><a href="#contact">Contact us</a></li>
-                        <li class="footer-links"><a href="{{ 'services'|page }}">how it works</a></li>
+                        <li class="footer-links"><a href="{{ 'services'|page }}">How it works</a></li>
                     </ul>
                 </div>
                 <div class="footer-support">

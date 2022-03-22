@@ -29,12 +29,7 @@ class ContactForm extends ComponentBase
         $rules = [
             'firstname' => 'required',
             'reasons_for_contacting' => 'required',
-            'business_name' => 'required',
-            'email' => 'required',
-            'phone' => 'required',
-            'address' => 'required',
-            'content' => 'required'
-
+            'email' => 'required'
         ];
 
         $validator = Validator::make($data, $rules);
@@ -50,7 +45,7 @@ class ContactForm extends ComponentBase
                 $message->subject('New message from contact form');
 
             });
-            Flash::success('Thank you for showing interest,we will contact you soon !!!');
+            Flash::success('Thank you for showing interest, We will contact you soon !!!');
 
         }
 

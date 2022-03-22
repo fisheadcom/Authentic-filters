@@ -64,7 +64,8 @@
 
                     .dropdown {
                         font-size: $font-size_18;
-                        color: $color_contact_inputs;
+                        //color: $color_contact_inputs;
+                        color: #000000;
                         font-weight: $font-weight_regular;
                         font-family: "Nexa", "sans-serif";
                         -webkit-appearance: none;
@@ -100,7 +101,8 @@
                 border: none;
                 background-color: $color_white;
                 font-weight: $font-weight_regular;
-                color: $color_contact_inputs;
+                //color: $color_contact_inputs;
+                color: #000000;
                 font-size: $font-size_18;
                 font-family: "Nexa", "sans-serif";
             }

@@ -150,15 +150,15 @@ title = "Home Page"
                         a
                         restaurant, pub, club,
                         hospital,
-                        shopping centre, or sporting arena we have you covered.
+                        shopping centre, or sporting arena, we have you covered.
                     </p>
                 </div>
                 <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*">
+                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*" required autocomplete="new-password">
                             <div class="contact-dropdown-icon">
-                                <select name="reasons_for_contacting" class="dropdown" type="select">
+                                <select name="reasons_for_contacting" class="dropdown" type="select" required autocomplete="new-password">
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
@@ -174,8 +174,8 @@ title = "Home Page"
                             <input name="business_name" class="contact-form-input" type="text" placeholder="Business Name">
                         </div>
                         <div class="contact-form-fields">
-                            <input name="email" class="contact-form-input" type="email" placeholder="Email*">
-                            <input name="phone" class="contact-form-input" type="number" placeholder="Phone">
+                            <input name="email" class="contact-form-input" type="email" placeholder="Email*" required autocomplete="new-password">
+                            <input name="phone" class="contact-form-input" type="tel" placeholder="Phone">
                             <input name="address" class="contact-form-input" type="text" placeholder="Address">
                         </div>
                     </div>
@@ -223,7 +223,7 @@ title = "Home Page"
                         <p class="footer-headers">Company</p>
                         <li class="footer-links"><a href="{{ 'about'|page }}">About us</a></li>
                         <li class="footer-links"><a href="#contact">Contact us</a></li>
-                        <li class="footer-links"><a href="{{ 'services'|page }}">how it works</a></li>
+                        <li class="footer-links"><a href="{{ 'services'|page }}">How it works</a></li>
                     </ul>
                 </div>
                 <div class="footer-support">
