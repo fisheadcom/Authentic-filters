@@ -41,7 +41,7 @@ class ContactForm extends ComponentBase
 
             Mail::send('watchlearn.contact::mail.message', $vars, function ($message) {
 
-                $message->to('info@authenticfilters.com.au', 'Admin Person');
+                $message->to('authenticfilters@gmail.com', 'Admin Person');
                 $message->subject('New message from contact form');
 
             });
