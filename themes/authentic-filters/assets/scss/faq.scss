@@ -18,7 +18,7 @@
                 width: 100%;
 
                 .faq-heading {
-                    font-size: $font-size_24;
+                    font-size: $font-size_18;
                     position: relative;
                     cursor: pointer;
                     margin-left: 0;
@@ -66,6 +66,9 @@
         .faq-content {
             padding: 0 $space_20 * 4;
             .faq-list {
+                .faq-heading {
+                    font-size: $font-size_24 !important;
+                }
                 .faq-heading::before {
                     top: 1px;
                     right: -14px;

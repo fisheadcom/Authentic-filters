@@ -308,7 +308,8 @@ p {
 .banner {
     padding: $space_25 * 4 $space_35 0 $space_35;
     width: 100%;
-
+    display: flex;
+    flex-direction: column-reverse;
     .first-content {
         h1 {
             font-size: $font-size_24;
@@ -316,26 +317,23 @@ p {
             letter-spacing: 0.6px;
             line-height: 1.7;
         }
-
         p {
             padding-top: $space_35 - 5;
             //padding-bottom: $space_35;
             line-height: 1.5;
             letter-spacing: 0.7px;
         }
-
         .click {
             padding-top: $space_20 * 2;
         }
     }
-
     .second-content {
+        padding-bottom: $space_25;
         img {
-           display: none;
+            width: 100%;
         }
     }
 }
-
 .bullet-content {
     .list-content {
         padding-left: $space_20;
@@ -347,7 +345,6 @@ p {
         }
     }
 }
-
 .main-content {
     padding: 0 $space_35;
 
@@ -355,9 +352,7 @@ p {
         padding: 0 !important;
         line-height: 1.5;
         letter-spacing: 1.5px;
-
     }
-
 }
 .line-height {
     line-height: 1 !important;

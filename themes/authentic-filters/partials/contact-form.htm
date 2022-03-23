@@ -16,7 +16,7 @@
                         shopping centre, or sporting arena, we have you covered.
                     </p>
                 </div>
-                <form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash autocomplete="do-not-show-ac">
+                <form id="af_contact_form" data-request="contactform::onSend" class="contact-form-fields-section" data-request-validate data-request-flash autocomplete="do-not-show-ac">
                     <div class="contact-flex">
                         <div class="contact-form-fields">
                             <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*" autocomplete="do-not-show-ac" required >
@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <button class="click-button" type="submit" data-attach-loading>Submit</button>
+                    <button id="af_contact_button"  class="click-button" type="submit" data-attach-loading>Submit</button>
                 </form>
             </div>
         </div>

@@ -12,7 +12,7 @@
     .contact-form {
         width: 100%;
         text-align: center;
-        padding: $space_25 * 4 $space_20 - 4;
+        padding: $space_25 * 3 $space_20 - 4;
         margin: 0 auto;
 
         .contact-header {
@@ -22,7 +22,7 @@
             }
 
             .contact-header-para {
-                padding-bottom: $space_25 *2;
+                //padding-bottom: $space_25 *2;
                 color: $color_white;
                 width: 70%;
                 margin: 0 auto;
@@ -34,63 +34,69 @@
             }
         }
 
-        .contact-flex {
-            .contact-form-fields {
-                display: flex;
-                flex-direction: column;
+        .contact-form-fields-section {
+            padding-top: $space_25 * 2;
+            width: 75%;
+            margin: 0 auto;
+            .contact-flex {
+                .contact-form-fields {
+                    display: flex;
+                    flex-direction: column;
 
-                .contact-form-input, .dropdown {
-                    padding: $space_10;
-                    margin-bottom: $space_20;
-                    border-radius: 4px;
-                    border: none;
-                    background-color: $color_white;
-                    font-weight: $font-weight_regular;
-                    font-size: $font-size_18;
-                    font-family: "Nexa", "sans-serif";
-                    outline: none;
-
-
-                    &::placeholder {
-                        //font-size: $font-size_18;
-                        color: $color_contact_inputs;
+                    .contact-form-input, .dropdown {
+                        padding: $space_10;
+                        margin-bottom: $space_20;
+                        border-radius: 4px;
+                        border: none;
+                        background-color: $color_white;
                         font-weight: $font-weight_regular;
-                        //font-family: "Nexa", "sans-serif";
-                    }
-                }
-
-                .contact-dropdown-icon {
-                    position: relative;
-
-                    .dropdown {
                         font-size: $font-size_18;
-                        //color: $color_contact_inputs;
-                        color: #000000;
-                        font-weight: $font-weight_regular;
                         font-family: "Nexa", "sans-serif";
-                        -webkit-appearance: none;
-                        width: 100%;
-                        .dropdown-option{
-                            color: $color_black;
+                        outline: none;
+
+
+                        &::placeholder {
+                            //font-size: $font-size_18;
+                            color: $color_contact_inputs;
+                            font-weight: $font-weight_regular;
+                            //font-family: "Nexa", "sans-serif";
                         }
                     }
-                    img {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        transform: translate(-50%, 50%);
-                        z-index: 0;
-                        display: block;
-                        pointer-events: none;
+
+                    .contact-dropdown-icon {
+                        position: relative;
+
+                        .dropdown {
+                            font-size: $font-size_18;
+                            //color: $color_contact_inputs;
+                            color: #000000;
+                            font-weight: $font-weight_regular;
+                            font-family: "Nexa", "sans-serif";
+                            -webkit-appearance: none;
+                            width: 100%;
+
+                            .dropdown-option {
+                                color: $color_black;
+                            }
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            transform: translate(-50%, 50%);
+                            z-index: 0;
+                            display: block;
+                            pointer-events: none;
+                        }
+
+
                     }
 
 
                 }
-
-
             }
         }
-
         .contact-form-message-field {
             .contact-form-message-input {
                 padding: $space_10;

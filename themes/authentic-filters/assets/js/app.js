@@ -40,6 +40,21 @@ $(document).ready(function () {
         $("#load-btn").css("display","none")
     });
 
-
-
+    var frmBtn = document.getElementById("af_contact_button");
+    var frm = document.getElementById("af_contact_form");
+    console.log(frm)
+    frmBtn.addEventListener('click', function () {
+        setTimeout(function(){
+          frm.reset();
+        },1000)
+    });
+    var footerFrmBtn = document.getElementById("footer_btn");
+    var footerFrm = document.getElementById("footer_form");
+    console.log(frm)
+    footerFrmBtn.addEventListener('click', function () {
+        setTimeout(function(){
+            footerFrm.reset();
+        },1000)
+    });
 });
+
