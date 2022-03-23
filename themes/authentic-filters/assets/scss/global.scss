@@ -492,6 +492,7 @@ p {
 .footer-input:-webkit-autofill:hover,
 .footer-input:-webkit-autofill:focus,
 .footer-input:-webkit-autofill:active{
+    border: 1px solid white !important;
     -webkit-box-shadow: 0 0 0 30px #495983 inset !important;
     //color: white !important;
     -webkit-text-fill-color: white !important;
