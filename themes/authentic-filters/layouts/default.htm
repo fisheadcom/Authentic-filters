@@ -18,7 +18,7 @@
 <body class="{{ 'page-'~this.page.id }}">
 
 <!-- Header -->
-    {% partial 'header' %}
+{% partial 'header' %}
 
 
 <!-- Content -->
@@ -27,6 +27,9 @@
 </section>
 
 <!-- Footer -->
+<footer>
+    {% partial "footer" %}
+</footer>
 
 <script
     type="text/javascript"
@@ -42,19 +45,19 @@
 
 <script type="text/javascript" src="{{'assets/js/app.js'|theme}}"></script>
 <script>
-    $(document).ready(function() {
-        jQuery.expr[':'].Contains = function(a, i, m) {
+    $(document).ready(function () {
+        jQuery.expr[':'].Contains = function (a, i, m) {
             return jQuery(a).text().toUpperCase()
                 .indexOf(m[3].toUpperCase()) >= 0;
         };
 
 
-        jQuery.expr[':'].contains = function(a, i, m) {
+        jQuery.expr[':'].contains = function (a, i, m) {
             return jQuery(a).text().toUpperCase()
                 .indexOf(m[3].toUpperCase()) >= 0;
         };
 
-        $('#search').keyup(function(e) {
+        $('#search').keyup(function (e) {
             var s = $(this).val().trim();
 
             if (s === '') {

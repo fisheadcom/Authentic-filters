@@ -1,5 +1,6 @@
+[interested]
+==
 <link rel="stylesheet" href="{{ ['assets/scss/footer.scss']|theme}}">
-
 
 <footer>
     <div class="footer-main">
@@ -17,17 +18,17 @@
                 <div class="footer-company">
                     <ul>
                         <p class="footer-headers">Company</p>
-                        <li class="footer-links"><a href="#">About us</a></li>
-                        <li class="footer-links"><a href="#">Contact us</a></li>
-                        <li class="footer-links"><a href="#">how it works</a></li>
+                        <li class="footer-links"><a href="{{ 'about'|page }}">About us</a></li>
+                        <li class="footer-links"><a href="#contact">Contact us</a></li>
+                        <li class="footer-links"><a href="{{ 'services'|page }}">How it works</a></li>
                     </ul>
                 </div>
                 <div class="footer-support">
                     <ul>
                         <p class="footer-headers">Support</p>
-                        <li class="footer-links"><a href="#">Help center</a></li>
-                        <li class="footer-links"><a href="#">Terms of services</a></li>
-                        <li class="footer-links"><a href="#">Privacy policy</a></li>
+                        <li class="footer-links"><a href="#contact">Help center</a></li>
+                        <li class="footer-links"><a href="{{'assets/content/Authentic Filters Pty Ltd Terms and Conditions.docx'|theme}}">Terms of services</a></li>
+                        <li class="footer-links"><a href="{{'assets/content/AF Privacy Policy.docx'|theme}}">Privacy policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,12 +36,12 @@
                 <div >
                     <div class="footer-get-in-touch">
 
-                        <form action="">
+                        <form data-request="interested::onSubmit" data-request-files data-request-flash autocomplete="nope">
                             <p class="footer-headers">Lets get in touch!</p>
 
 
                             <div class="footer-form">
-                                <input class="footer-input" type="text" placeholder="Your email address"/>
+                                <input name="email" class="footer-input" type="email" placeholder="Your email address"/>
                                 <button><img src="{{'assets/images/footer/send-arrow.svg'|theme}}" alt=""/></button>
                             </div>
                         </form>
