@@ -19,9 +19,9 @@
                 <form id="af_contact_form" data-request="contactform::onSend" class="contact-form-fields-section" data-request-validate data-request-flash autocomplete="do-not-show-ac">
                     <div class="contact-flex">
                         <div class="contact-form-fields">
-                            <input name="firstname" class="contact-form-input" type="text" placeholder="Your Name*" autocomplete="do-not-show-ac" required >
+                            <input id="firstname_id" name="firstname" class="contact-form-input" type="text" placeholder="Your Name*" autocomplete="do-not-show-ac" required >
                             <div class="contact-dropdown-icon">
-                                <select name="reasons_for_contacting" class="dropdown" type="select" required>
+                                <select id="reasons_id" name="reasons_for_contacting" class="dropdown" type="select" required>
                                     <option disabled selected value>
                                         Reasons for Contacting*
                                     </option>
@@ -34,16 +34,16 @@
                                 <img src="{{'assets/images/contact-form/ic_round-arrow-drop-down-circle.svg'|theme}}"
                                      alt=""/>
                             </div>
-                            <input name="business_name" class="contact-form-input" type="text" placeholder="Business Name" autocomplete="new-password">
+                            <input id="business_id" name="business_name" class="contact-form-input" type="text" placeholder="Business Name" autocomplete="new-password">
                         </div>
                         <div class="contact-form-fields">
-                            <input name="email" class="contact-form-input" type="email" placeholder="Email*" required autocomplete="new-password">
-                            <input name="phone" class="contact-form-input" type="tel" placeholder="Phone" autocomplete="new-password">
-                            <input name="address" class="contact-form-input" type="text" placeholder="Address" autocomplete="new-password">
+                            <input id="email_id" name="email" class="contact-form-input" type="email" placeholder="Email*" required autocomplete="new-password">
+                            <input id="phone_id" name="phone" class="contact-form-input" type="tel" placeholder="Phone" autocomplete="new-password">
+                            <input id="address_id" name="address" class="contact-form-input" type="text" placeholder="Address" autocomplete="new-password">
                         </div>
                     </div>
                     <div class="contact-form-message-field">
-                        <textarea type="text" class="contact-form-message-input" name="content" id="" cols="30"
+                        <textarea type="text" class="contact-form-message-input" name="content" id="content_id" cols="30"
                                   rows="10" placeholder="Message" autocomplete="new-password" ></textarea>
                         <div class="contact-suggestion-section">
                             <h5><span class="contact-star">*</span></h5>
