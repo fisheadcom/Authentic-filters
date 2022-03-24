@@ -460,7 +460,9 @@ p {
 
 }
 .padding-right {
-    padding-right: $space_20 + 5;
+    @media screen and (min-width: $desktop) {
+        padding-right: $space_20 + 5;
+    }
 }
 .headers-content {
     padding: 0;

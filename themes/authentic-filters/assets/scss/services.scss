@@ -27,6 +27,12 @@
         display: none;
     }
 }
+.services-second-part-head {
+    padding: 0 $space_35;
+    @media SCREEN and (min-width: $desktop) {
+        padding: 0 $space_25 * 3;
+    }
+}
 .table {
     display: none;
     width: 100%;
