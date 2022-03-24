@@ -27,7 +27,7 @@
                 width: 70%;
                 margin: 0 auto;
                 font-size: $font_size_14;
-                @media SCREEN and (min-width: $desktop){
+                @media SCREEN and (min-width: $desktop) {
                     font-size: $font_size_20;
 
                 }
@@ -38,6 +38,7 @@
             padding-top: $space_25 * 2;
             width: 75%;
             margin: 0 auto;
+
             .contact-flex {
                 .contact-form-fields {
                     display: flex;
@@ -93,10 +94,11 @@
 
                     }
 
-
                 }
+
             }
         }
+
         .contact-form-message-field {
             .contact-form-message-input {
                 padding: $space_10;
@@ -174,6 +176,7 @@
         }
     }
 }
+
 @media SCREEN and (min-width: $large_desktop) {
     .contact-form {
         //width: 55% !important;
