@@ -1,0 +1,18 @@
+columns:
+    firstname:
+        label: Name
+        type: text
+        searchable: true
+    email:
+        label: Email
+        type: text
+        searchable: true
+    reasons_for_contacting:
+        label: 'Reason For Contacting'
+        type: text
+        searchable: true
+    created_at:
+        label: 'Created At'
+        type: datetime
+        searchable: true
+        sortable: true

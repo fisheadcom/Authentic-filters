@@ -4,3 +4,8 @@ plugin:
     author: watchlearn
     icon: oc-icon-adjust
     homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Contact Form'
+        url: watchlearn/contact/contactform
+        icon: icon-comments

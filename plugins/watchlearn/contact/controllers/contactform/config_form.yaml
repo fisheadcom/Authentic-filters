@@ -1,0 +1,10 @@
+name: ContactForm
+form: $/watchlearn/contact/models/contact/fields.yaml
+modelClass: Watchlearn\Contact\Models\Contact
+defaultRedirect: watchlearn/contact/contactform
+create:
+    redirect: 'watchlearn/contact/contactform/update/:id'
+    redirectClose: watchlearn/contact/contactform
+update:
+    redirect: watchlearn/contact/contactform
+    redirectClose: watchlearn/contact/contactform

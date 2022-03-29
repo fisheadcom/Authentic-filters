@@ -1,0 +1,4 @@
+title: ContactForm
+modelClass: Watchlearn\Contact\Models\Contact
+toolbar:
+    buttons: reorder_toolbar

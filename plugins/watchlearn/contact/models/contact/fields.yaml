@@ -1,0 +1,29 @@
+fields:
+    firstname:
+        label: Name
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
+        type: text
+    reasons_for_contacting:
+        label: 'Reason For Contacting'
+        span: auto
+        type: text
+    phone:
+        label: Phone
+        span: auto
+        type: text
+    business_name:
+        label: 'Business Name'
+        span: auto
+        type: text
+    address:
+        label: Address
+        span: auto
+        type: text
+    content:
+        label: Content
+        span: auto
+        type: text

@@ -1,2 +1,11 @@
 1.0.1:
-    - Initialize plugin.
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table watchlearn_contact_'
+    - builder_table_create_watchlearn_contact_.php
+1.0.3:
+    - 'Updated table watchlearn_contact_'
+    - builder_table_update_watchlearn_contact_.php
+1.0.4:
+    - 'Updated table watchlearn_contact_'
+    - builder_table_update_watchlearn_contact__2.php
