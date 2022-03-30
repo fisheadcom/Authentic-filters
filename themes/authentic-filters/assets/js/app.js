@@ -62,5 +62,21 @@ $(document).ready(function () {
              footerFrm.reset();
         },1000)
     });
+    $(document).click(function(e){
+        e.stopPropagation();
+        if($('.nav-links').hasClass('nav-active') === true){
+
+
+            if($(e.target).hasClass('nav-active') === false && $(e.target).hasClass('burger') === false){
+               $('ul').removeClass('nav-active')
+               $('.burger').removeClass('toggle')
+                $('.nav-links li').removeAttr('style')
+
+            }
+        }
+
+    });
+
+
 });
 

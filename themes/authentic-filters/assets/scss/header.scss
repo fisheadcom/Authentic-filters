@@ -88,12 +88,14 @@ header {
     .burger {
         display: inline-block;
         z-index: 99;
+        cursor: pointer;
         div {
             width: 20px;
             height: 2px;
             background-color: #3a3a3c;
             margin: 5px;
             transition: all 0.3s ease;
+            pointer-events: none;
         }
     }
 
