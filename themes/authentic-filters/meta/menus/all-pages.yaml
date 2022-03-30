@@ -1,0 +1,10 @@
+items:
+    -
+        title: 'header menu'
+        type: header
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'all pages'

@@ -209,7 +209,7 @@ p {
         }
 
         img {
-            width: 100%;
+            width: 100% !important;
             height: auto;
             object-fit: cover;
         }
@@ -217,7 +217,7 @@ p {
 
     .about-content {
         h1 {
-            padding-bottom: $space_20;
+            //padding-bottom: $space_20;
             font-size: $font_size_24;
 
         }
@@ -262,11 +262,13 @@ p {
 
 
 .underline-header {
+    padding: 0 !important;
+    line-height: 0 !important;
     background-color: $color_black;
     width: 40px;
     height: 3px;
     display: block;
-    //margin-top: $space_10 + 5;
+    margin-top: $space_10 + 5;
     margin-bottom: $space_20;
     @media SCREEN and (min-width: $desktop) {
         width: 80px;
@@ -323,6 +325,9 @@ p {
             //padding-bottom: $space_35;
             line-height: 1.5;
             letter-spacing: 0.7px;
+            @media SCREEN and (min-width: $desktop){
+                font-size: $font-size_24;
+            }
         }
         .click {
             padding-top: $space_20 * 2;
@@ -331,7 +336,7 @@ p {
     .second-content {
         padding-bottom: $space_25;
         img {
-            width: 100%;
+            width: 100% !important;
         }
     }
 }
@@ -378,7 +383,7 @@ p {
 
             img {
                 display: unset;
-                width: 100%;
+                width: 100% !important;
                 height: auto;
             }
         }
@@ -405,7 +410,7 @@ p {
 
             img {
                 display: unset;
-                width: 100%;
+                width: 100% !important;
                 height: auto;
             }
         }

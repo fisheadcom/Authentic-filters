@@ -62,6 +62,7 @@ $(document).ready(function () {
              footerFrm.reset();
         },1000)
     });
+<<<<<<< Updated upstream
     $(document).click(function(e){
         e.stopPropagation();
         if($('.nav-links').hasClass('nav-active') === true){
@@ -78,5 +79,35 @@ $(document).ready(function () {
     });
 
 
+=======
+
+
+    jQuery.expr[':'].Contains = function (a, i, m) {
+        return jQuery(a).text().toUpperCase()
+            .indexOf(m[3].toUpperCase()) >= 0;
+    };
+
+
+    jQuery.expr[':'].contains = function (a, i, m) {
+        return jQuery(a).text().toUpperCase()
+            .indexOf(m[3].toUpperCase()) >= 0;
+    };
+
+    $('#search').keyup(function (e) {
+        var s = $(this).val().trim();
+
+        if (s === '') {
+            $('#result li').show();
+            return true;
+        }
+        $('#result li:not(:contains(' + s + '))').hide();
+
+        $('#result li:contains(' + s + ')').show();
+        return true;
+    });
+
+
+
+>>>>>>> Stashed changes
 });
 

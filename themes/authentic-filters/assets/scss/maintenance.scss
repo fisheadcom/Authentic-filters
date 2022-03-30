@@ -17,11 +17,16 @@
 }
 
 
-@media SCREEN and (min-width: $desktop) {
+
     .maintenance-text {
-        display: none;
+        font-style: normal;
+        @media SCREEN and (min-width: $tablet) {
+            display: none !important;
+
+        }
     }
     .click {
-        display: none;
+        @media SCREEN and (min-width: $tablet) {
+        display: none !important;
     }
 }

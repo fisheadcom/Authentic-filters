@@ -1,0 +1,70 @@
+[staticPage]
+useContent = 1
+default = 0
+
+[staticMenu]
+code = "all-pages"
+
+[contactform]
+==
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Authentic Filters</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="{{'assets/images/logo/af-favicon.png'|theme}}" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ ['assets/scss/header.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/contact-form.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/footer.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/homepage.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/about.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/maintenance.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/services.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/faq-page.scss']|theme}}">
+    <link rel="stylesheet" href="{{ ['assets/scss/faq.scss']|theme}}">
+</head>
+<body class="{{ 'page-'~this.page.id }}">
+
+<!-- Header -->
+
+
+<header>
+    {% partial "header" %}
+</header>
+
+
+
+<!-- Content -->
+<section id="layout-content">
+    {% page %}
+    {% partial "contact-form" %}
+</section>
+
+<!-- Footer -->
+
+ {% partial "footer" %}
+
+<script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+
+<script type="text/javascript" src="{{'assets/js/app.js'|theme}}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>
