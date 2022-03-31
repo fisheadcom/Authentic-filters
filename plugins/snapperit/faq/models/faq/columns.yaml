@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: Id
+        type: number
+        sortable: true
+    question:
+        label: Question
+        type: text
+        searchable: false
+        sortable: false
+    answer:
+        label: Answer
+        type: text
+        sortable: false

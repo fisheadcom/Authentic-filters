@@ -1,0 +1,11 @@
+plugin:
+    name: 'snapperit.faq::lang.plugin.name'
+    description: 'snapperit.faq::lang.plugin.description'
+    author: snapperit
+    icon: oc-icon-question-circle
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Faq
+        url: snapperit/faq/faqs
+        icon: icon-question-circle

@@ -1,0 +1,13 @@
+list: $/snapperit/faq/models/faq/columns.yaml
+modelClass: Snapperit\Faq\Models\Faq
+title: Faqs
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'snapperit/faq/faqs/update/:id'
+

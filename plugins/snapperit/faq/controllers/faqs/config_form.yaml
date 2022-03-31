@@ -1,0 +1,10 @@
+name: Faqs
+form: $/snapperit/faq/models/faq/fields.yaml
+modelClass: Snapperit\Faq\Models\Faq
+defaultRedirect: snapperit/faq/faqs
+create:
+    redirect: 'snapperit/faq/faqs/update/:id'
+    redirectClose: snapperit/faq/faqs
+update:
+    redirect: snapperit/faq/faqs
+    redirectClose: snapperit/faq/faqs
