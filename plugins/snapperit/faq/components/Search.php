@@ -10,7 +10,7 @@ class Search extends ComponentBase
 {
     // type = 1 -> String Search
     // type = 2 -> Regex Search
-    protected $SearchType = 2;
+    protected $SearchType = 1;
 
     public function componentDetails()
     {
