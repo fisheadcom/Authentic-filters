@@ -36,7 +36,7 @@ sortColumn = "sort_order"
             const regex = new RegExp(searchText, 'gim');
             Array.from(faqSearchResults).forEach((element) => {
                 let text = element.innerText;
-                let newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+                let newText = searchText.text.replace(regex, '<mark class="highlight">$&</mark>');
                 element.innerHTML = newText;
             })
         }
@@ -47,19 +47,18 @@ sortColumn = "sort_order"
 <link rel="stylesheet" href="{{ ['assets/scss/footer.scss']|theme}}">
 
 
+
 <div class="faq-page">
     <div class="faq-banner">
         <div class="content-faq">
             <h2>Frequently Asked Questions</h2>
             <div class="icon-input">
-                        <div class="m-5">
-        <input data-request="{{ FaqSearch }}::onSend" data-track-input data-request-update="faqResults: '#results'"
-               class="form-control" id="keyword" type="text" name="keyword" placeholder="Enter your query" autocomplete="off" autofocus>
-    </div>
+                <div class="m-5 icon-input">
+                    <input id="search" class="faq-input icon-input__text-field" type="text">
+                    <i class="icon-input__icon material-icons">search</i>
+                </div>
 
-    <div id="results" style="color: white;">
-        {% partial "faqResults"%}
-    </div>
+
             </div>
         </div>
     </div>
@@ -67,6 +66,12 @@ sortColumn = "sort_order"
 
 
 <div class="container vh-100">
-
+    <h1 class="headers">Frequently Asked Questions</h1>
+    <div id="results" style="color: white;">
+        {% partial "faqResults"%}
+    </div>
 
 </div>
+
+</div>
+

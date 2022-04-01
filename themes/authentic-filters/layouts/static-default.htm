@@ -2,10 +2,16 @@
 useContent = 1
 default = 0
 
-[staticMenu]
-code = "all-pages"
-
 [contactform]
+
+[staticMenu]
+code = "headermenu"
+
+[staticMenu staticMenu2]
+code = "footercompanylinks"
+
+[staticMenu staticMenu3]
+code = "footer-support-links"
 ==
 <!doctype html>
 <html lang="en">
@@ -14,7 +20,9 @@ code = "all-pages"
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Authentic Filters</title>
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <title>{{ this.page.title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="{{'assets/images/logo/af-favicon.png'|theme}}" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -35,7 +43,29 @@ code = "all-pages"
 
 
 <header>
-    {% partial "header" %}
+    <div class="logo">
+        <a href="/"> <img src="{{'assets/images/logo/authentic-filters-logo.jpg'|theme}}"
+                                             alt=""/></a>
+    </div>
+    <nav>
+
+
+    {% if staticMenu.menuItems %}
+
+     <ul class="nav-links">
+           <li>{% partial staticMenu ~ "::items" items=staticMenu.menuItems %} <li>
+             <li class="header-click-button"><a class="nav-link click-button" href="#contact">Get Started</a></li>
+
+        </ul>
+
+    {% endif %}
+
+    </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 </header>
 
 
@@ -48,7 +78,64 @@ code = "all-pages"
 
 <!-- Footer -->
 
- {% partial "footer" %}
+
+ <footer>
+    <div class="footer-main">
+        <div class="footer-section">
+            <div class="footer-logo-section">
+                <div class="footer-logo">
+                    <img src="{{'assets/images/footer/footer-logo.svg'|theme}}" alt=""/>
+                </div>
+                <div class="footer-social-links">
+                    <li><a href=""><img src="{{'assets/images/footer/instagram.svg'|theme}}" alt=""/></a></li>
+                    <li><a href=""><img src="{{'assets/images/footer/facebook.svg'|theme}}" alt=""/></a></li>
+                </div>
+            </div>
+            <div class="footer-desktop-company-links">
+                <div class="footer-company">
+                    <ul>
+                        <p class="footer-headers">Company</p>
+                        <li class="footer-links">{% component 'staticMenu2' %}</li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <ul>
+                        <p class="footer-headers">Support</p>
+                        <li class="footer-links">{% component 'staticMenu3' %}</li>
+                        <li class="footer-links"><a href="{{'assets/content/Authentic Filters Pty Ltd Terms and Conditions.docx'|theme}}">Terms of services</a></li>
+                        <li class="footer-links"><a href="{{'assets/content/AF Privacy Policy.docx'|theme}}">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-touch-section">
+                <div >
+                    <div class="footer-get-in-touch">
+
+                        <form id="footer_form" data-request="interested::onSubmit" data-request-files data-request-flash autocomplete="nope">
+                            <p class="footer-headers">Lets get in touch!</p>
+
+
+                            <div class="footer-form">
+                                <input name="email" class="footer-input" type="email" placeholder="Your email address"/>
+                                <button id="footer_btn"><img src="{{'assets/images/footer/send-arrow.svg'|theme}}" alt=""/></button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright © 2022 Authentic Filters </p>
+                        <div class="copy">
+                            <p>All rights reserved</p>
+                            <div class="line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <script
     type="text/javascript"

@@ -20,10 +20,10 @@
             text-align: center;
             width: 100%;
             @media SCREEN and (min-width: $tablet) {
-                padding: $space_175 $space_175;
+                //padding: $space_175 $space_175;
             }
             @media SCREEN and (min-width: $desktop) {
-                padding: $space_265 $space_265;
+                //padding: $space_265 $space_265;
             }
 
             h2 {
@@ -60,7 +60,7 @@
     }
 }
 .headers {
-    display: none !important;
+    //display: none !important;
 }
 
 .faq-headers {
@@ -75,7 +75,7 @@
 
 .icon-input {
     z-index: 0;
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -86,7 +86,7 @@
         width: 60%
     }
     @media SCREEN and (min-width: $desktop_xl) {
-        width: 50%
+        width: 60%
     }
 
     &__text-field {
@@ -109,3 +109,5 @@
 input::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
+
+

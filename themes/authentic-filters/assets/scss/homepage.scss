@@ -125,11 +125,6 @@
 
 }
 
-.faq-headers,.faq-headers-most {
-    display: none !important;
-}
-
-
 @media SCREEN and (min-width: $tablet) {
     .home-page {
         .main-services {
@@ -233,5 +228,15 @@
                 }
             }
         }
+    }
+}
+
+.head-1 faq-headers-most {
+    display: none !important;
+}
+
+.page-home-page {
+    .faq-headers-most {
+        display: none !important;
     }
 }

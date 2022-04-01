@@ -36,8 +36,11 @@
 
         .contact-form-fields-section {
             padding-top: $space_25 * 2;
-            width: 75%;
+            width: 94%;
             margin: 0 auto;
+            @media SCREEN and (min-width: $desktop) {
+                width: 75%;
+            }
 
             .contact-flex {
                 .contact-form-fields {

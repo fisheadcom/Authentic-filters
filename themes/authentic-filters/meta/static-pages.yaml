@@ -1,6 +1,6 @@
 static-pages:
     home-page: {  }
+    services-page: {  }
     about: {  }
     maintenance: {  }
     faq-page-1: {  }
-    services-page: {  }

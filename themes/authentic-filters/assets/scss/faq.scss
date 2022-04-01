@@ -7,7 +7,6 @@
 
         .faq-list {
             list-style: none;
-
             li {
                 background-color: $color_white;
                 border-radius: 5px;
@@ -25,6 +24,21 @@
                     color: $color_faq;
                 }
 
+            }
+            .faq-list-item{
+                display: none;
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4){
+                    display: inherit;
+                }
+                &.faq-items-display{
+                    display: inherit;
+                }
+                @media screen and (min-width: $desktop) {
+                    display: inherit;
+                }
             }
 
             .faq-heading::before {
@@ -59,6 +73,10 @@
     .heading-color {
         color: $color_primary !important;
     }
+
+    .load {
+        padding-bottom: 70px;
+    }
 }
 
 @media screen and (min-width: $desktop) {
@@ -82,5 +100,11 @@
         #load-btn {
             display: none;
         }
+    }
+}
+
+.page-faq-page-1{
+    .headers{
+        display: none;
     }
 }

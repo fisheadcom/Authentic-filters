@@ -10,7 +10,7 @@ header {
     //min-height: 8vh;
     height: 100px;
     align-items: center;
-    padding: $space_25 $space_25;
+    padding: $space_25 $space_35 - 1;
     position: fixed;
     justify-content: space-around;
     z-index: 999;
@@ -58,18 +58,21 @@ header {
                 padding: 0;
 
             }
+            @media screen and (max-width: 1023px) and (orientation: landscape) {
+                top: 0;
+            }
             li {
                 list-style: none;
                 padding: 12px 30px;
                 @media screen and (min-width: $desktop){
                     padding: 15px 0;
                 }
-                .nav-link {
+                > a {
                     color: $color_black;
                     text-decoration: none;
                     font-weight: $font-weight_bold;
                     //line-height: 18px;
-                    font-size: $font_size_14;
+                    font-size: $font_size_18;
                 }
             }
             .header-click-button {
@@ -170,7 +173,7 @@ header {
             flex: 4;
             .nav-links {
                 li {
-                    .nav-link {
+                    > a {
                         font-size: $font_size_18;
                     }
                 }

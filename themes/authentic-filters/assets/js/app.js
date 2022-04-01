@@ -35,51 +35,51 @@ $(document).ready(function () {
         $(this).toggleClass("heading-color");
     });
 
-    $("#load-btn").on("click",function (){
-        $(".load-more").css("display","unset");
-        $("#load-btn").css("display","none")
+    $("#load-btn").on("click", function () {
+        $(".faq-list-item").addClass('faq-items-display');
+        $("#load-btn").css("display", "none")
     });
 
-    var frmBtn = document.getElementById("af_contact_button");
-    var frm = document.getElementById("af_contact_form");
+    let frmBtn = document.getElementById("af_contact_button");
+    let frm = document.getElementById("af_contact_form");
 
-    console.log(frm)
-    frmBtn.addEventListener('click', function () {
-        if (($("#firstname_id").val() !== '') && ($("#reasons_id").val() !== '') && ($("#email_id").val() !== '')){
-            console.log("hi")
+    // console.log(frm)
+    if (frmBtn) {
+        frmBtn.addEventListener('click', function () {
+            if (($("#firstname_id").val() !== '') && ($("#reasons_id").val() !== '') && ($("#email_id").val() !== '')) {
+                console.log("hi")
+                setTimeout(function () {
+                    frm.reset();
+                    console.log("clicked")
+
+                }, 1000)
+            }
+        });
+    }
+    let footerFrmBtn = document.getElementById("footer_btn");
+    let footerFrm = document.getElementById("footer_form");
+    if (footerFrmBtn) {
+        footerFrmBtn.addEventListener('click', function () {
             setTimeout(function () {
-                 frm.reset();
-                console.log("clicked")
-
+                footerFrm.reset();
             }, 1000)
-        }
-    });
-    var footerFrmBtn = document.getElementById("footer_btn");
-    var footerFrm = document.getElementById("footer_form");
-    console.log(frm)
-    footerFrmBtn.addEventListener('click', function () {
-        setTimeout(function(){
-             footerFrm.reset();
-        },1000)
-    });
-<<<<<<< Updated upstream
-    $(document).click(function(e){
+        });
+    }
+
+    $(document).click(function (e) {
         e.stopPropagation();
-        if($('.nav-links').hasClass('nav-active') === true){
+        if ($('.nav-links').hasClass('nav-active') === true) {
 
 
-            if($(e.target).hasClass('nav-active') === false && $(e.target).hasClass('burger') === false){
-               $('ul').removeClass('nav-active')
-               $('.burger').removeClass('toggle')
+            if ($(e.target).hasClass('nav-active') === false && $(e.target).hasClass('burger') === false) {
+                $('ul').removeClass('nav-active')
+                $('.burger').removeClass('toggle')
                 $('.nav-links li').removeAttr('style')
 
             }
         }
 
     });
-
-
-=======
 
 
     jQuery.expr[':'].Contains = function (a, i, m) {
@@ -97,17 +97,23 @@ $(document).ready(function () {
         var s = $(this).val().trim();
 
         if (s === '') {
-            $('#result li').show();
+            $('#answer li').show();
             return true;
         }
-        $('#result li:not(:contains(' + s + '))').hide();
+        $('#answer li:not(:contains(' + s + '))').hide();
 
-        $('#result li:contains(' + s + ')').show();
+        $('#answer li:contains(' + s + ')').show();
         return true;
     });
+    //
+    // $(document).ready(function () {
+    //     $('.faq-lists').click(function () {
+    //         $('.faq-list').toggle("slide");
+    //     });
+    // });
 
-
-
->>>>>>> Stashed changes
+    let faqSearchResults = document.querySelector('#faq-search-result');
+    faqSearchResults = [];
+    console.log(faqSearchResults);
 });
 

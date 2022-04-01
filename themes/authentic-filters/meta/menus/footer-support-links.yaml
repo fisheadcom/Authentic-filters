@@ -1,10 +1,11 @@
 items:
     -
-        title: 'header menu'
-        type: header
+        title: 'Contact Us'
+        type: url
+        url: '/#contact'
         code: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-name: 'all pages'
+name: 'Footer Support Links'
