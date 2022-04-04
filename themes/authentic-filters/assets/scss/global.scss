@@ -209,7 +209,7 @@ p {
         }
 
         img {
-            width: 99% !important;
+            width: 100% !important;
             height: auto;
             object-fit: cover;
         }
@@ -243,10 +243,7 @@ p {
 }
 
 .right {
-    @media  SCREEN and (min-width: $desktop) {
-        flex-direction: row-reverse !important;
-    }
-
+    flex-direction: row-reverse !important;
 }
 
 .left-shadow {
@@ -338,12 +335,8 @@ p {
     }
     .second-content {
         padding-bottom: $space_25;
-        //width: 95%;
         img {
-            width: 98% !important;
-            @media SCREEN and (min-width: $desktop){
-                width: 100% !important;
-            }
+            width: 100% !important;
         }
     }
 }
@@ -390,7 +383,7 @@ p {
 
             img {
                 display: unset;
-                width: 98% !important;
+                width: 100% !important;
                 height: auto;
             }
         }
@@ -511,7 +504,3 @@ p {
     color: white;
 }
 
-//.main-container {
-//    padding-right: $space_35;
-//    padding-left: $space_35;
-//}
