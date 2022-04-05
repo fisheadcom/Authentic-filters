@@ -207,11 +207,13 @@ p {
         @media SCREEN and (min-width: $tablet) {
             //padding-right: $space_25;
         }
-
         img {
             width: 100% !important;
             height: auto;
             object-fit: cover;
+            @media  SCREEN and (min-width: $desktop) {
+                width: 100% !important;
+            }
         }
     }
 
@@ -299,7 +301,6 @@ p {
         text-transform: uppercase;
         @media SCREEN and (min-width: $desktop){
             font-size: $font-size_24;
-
         }
         &.head-service{
             font-weight: $font-weight_bold;
@@ -504,3 +505,11 @@ p {
     color: white;
 }
 
+.highlight {
+    color: $color_white;
+    background: $color_black;
+}
+
+.hidden{
+    display: none !important;
+}

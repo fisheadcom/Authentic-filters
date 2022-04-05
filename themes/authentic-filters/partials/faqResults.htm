@@ -20,6 +20,7 @@ pageNumber = "{{ :page }}"
 ==
 <link rel="stylesheet" href="{{ ['assets/scss/faq.scss']|theme}}">
 <link rel="stylesheet" href="{{ ['assets/scss/faq-page.scss']|theme}}">
+<link rel="stylesheet" href="{{ ['assets/scss/global.scss']|theme}}">
 
 <ul class="contianer m-5" id="faq-search-elements">
 
@@ -36,9 +37,9 @@ pageNumber = "{{ :page }}"
                         </div>
                         <ul id="answer" class="faq-list faq-ul faq-lists">
                             {% for record in records %}
-                            <li class="faq-list-item" id="faq-search-result">
-                                <h5 class="fs-5 search-elements faq-heading">{{record.question}}</h5>
-                                <p class="search-elements read faq-text">
+                            <li class="faq-list-item">
+                                <h5 class="fs-5 search-elements faq-heading search-elements">{{record.question}}</h5>
+                                <p class="search-elements read faq-text ">
                                     {{record.answer}}
                                 </p>
                             </li>
@@ -75,6 +76,5 @@ pageNumber = "{{ :page }}"
     {% endif %}
 </ul>
 {% endif %}
-
 
 <!--<script>highlightQueryText()</script>-->

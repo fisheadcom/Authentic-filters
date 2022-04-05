@@ -29,18 +29,18 @@ sortColumn = "sort_order"
         return doc.body;
     };
 
-    function highlightQueryText() {
-        let faqSearchResults = document.getElementsByClassName('search-elements');
-        const searchText = document.getElementById('keyword').value.replace(/\s\s+/g, ' ').trim().replace(" ", '|');
-        if (searchText != "") {
-            const regex = new RegExp(searchText, 'gim');
-            Array.from(faqSearchResults).forEach((element) => {
-                let text = element.innerText;
-                let newText = searchText.text.replace(regex, '<mark class="highlight">$&</mark>');
-                element.innerHTML = newText;
-            })
-        }
-    }
+    // function highlightQueryText() {
+    //     let faqSearchResults = document.getElementsByClassName('search-elements');
+    //     const searchText = document.getElementById('keyword').value.replace(/\s\s+/g, ' ').trim().replace(" ", '|');
+    //     if (searchText != "") {
+    //         const regex = new RegExp(searchText, 'gim');
+    //         Array.from(faqSearchResults).forEach((element) => {
+    //             let text = element.innerText;
+    //             let newText = searchText.text.replace(regex, '<mark class="highlight">$&</mark>');
+    //             element.innerHTML = newText;
+    //         })
+    //     }
+    // }
 </script>
 <link rel="stylesheet" href="{{ ['assets/scss/faq-page.scss']|theme}}">
 <link rel="stylesheet" href="{{ ['assets/scss/contact-form.scss']|theme}}">

@@ -94,26 +94,47 @@ $(document).ready(function () {
     };
 
     $('#search').keyup(function (e) {
-        var s = $(this).val().trim();
-
-        if (s === '') {
-            $('#answer li').show();
-            return true;
-        }
+        let s = $(this).val().trim();
         $('#answer li:not(:contains(' + s + '))').hide();
-
         $('#answer li:contains(' + s + ')').show();
+        let faqSearchResults = document.getElementsByClassName('faq-heading');
+        let faqHeaders = document.getElementsByClassName('faq-headers');
+        const searchText = document.getElementById('search').value.replace(/\s\s+/g, ' ').trim().replace(" ", '|');
+        if (searchText.length !== 0) {
+            const regex = new RegExp(searchText, 'gim');
+            Array.from(faqSearchResults).forEach((element) => {
+                let text = element.innerText;
+                let newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+                element.innerHTML = newText;
+
+            })
+
+        } else {
+            const noRecords = document.querySelector('faq-headers');
+            const regex = new RegExp('<mark class="highlight">|</mark>', 'gim');
+            Array.from(faqSearchResults).forEach((element) => {
+                let text = element.innerText;
+                let newText = text.replace(regex, '');
+                element.innerHTML = newText;
+            })
+        }
+        if ($('.faq-list-item:visible').size() === 0) {
+            $('.faq-headers').text('No Results Found')
+            // if ($('#load-btn')){
+                $('.load').css("display", 'none');
+            console.log($('.load'));
+            // }
+        } else if ($('#search').val().length === 0) {
+            $('.faq-headers').text('Most Frequently Asked Questions')
+            $('.load').css("display", 'none');
+            // $('#load-btn').show()
+        } else {
+            $('.faq-headers').text('Most Frequently Asked Questions')
+            $('.load').css("display", 'none');
+
+            // $('#load-btn').show()
+        }
         return true;
     });
-    //
-    // $(document).ready(function () {
-    //     $('.faq-lists').click(function () {
-    //         $('.faq-list').toggle("slide");
-    //     });
-    // });
-
-    let faqSearchResults = document.querySelector('#faq-search-result');
-    faqSearchResults = [];
-    console.log(faqSearchResults);
 });
 
