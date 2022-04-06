@@ -240,3 +240,15 @@
         display: none !important;
     }
 }
+
+.home-page{
+    .click {
+        display: inherit !important;
+        padding-top: $space_25 * 2;
+        @media SCREEN and (min-width: $large_desktop) {
+            display: inherit !important;
+        }
+
+    }
+
+}

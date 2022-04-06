@@ -155,7 +155,7 @@ p {
     cursor: pointer;
     text-decoration: none;
     font-weight: $font-weight_bold;
-    font-family: "Nexa",sans-serif;
+    font-family: "Nexa", sans-serif;
 }
 
 .learn {
@@ -201,17 +201,19 @@ p {
 
 .main-box {
     padding: 0 $space_35;
+
     .first-image {
         padding-bottom: $space_25 * 2;
         //padding-right: $space_10 - 4;
         @media SCREEN and (min-width: $tablet) {
             //padding-right: $space_25;
         }
+
         img {
             width: 100% !important;
             height: auto;
             object-fit: cover;
-            @media  SCREEN and (min-width: $desktop) {
+            @media SCREEN and (min-width: $desktop) {
                 width: 100% !important;
             }
         }
@@ -235,10 +237,12 @@ p {
         }
     }
 }
+
 .head-1 {
     .head-1-about {
         padding-bottom: 0 !important;
     }
+
     span {
         margin-top: $space_20;
     }
@@ -250,14 +254,14 @@ p {
 
 .left-shadow {
     box-shadow: -11px 11px 0px 0px $color_box_shadow;
-    @media  SCREEN and (min-width: $desktop) {
+    @media SCREEN and (min-width: $desktop) {
         box-shadow: -29px 26px 0px 0px $color_box_shadow;
     }
 }
 
 .right-shadow {
     box-shadow: 11px 11px $color_box_shadow;
-    @media  SCREEN and (min-width: $desktop) {
+    @media SCREEN and (min-width: $desktop) {
         box-shadow: 29px 26px $color_box_shadow;
     }
 }
@@ -299,10 +303,11 @@ p {
         //font-weight: $font-weight_bold;
         font-weight: $font-weight_regular;
         text-transform: uppercase;
-        @media SCREEN and (min-width: $desktop){
+        @media SCREEN and (min-width: $desktop) {
             font-size: $font-size_24;
         }
-        &.head-service{
+
+        &.head-service {
             font-weight: $font-weight_bold;
         }
     }
@@ -314,6 +319,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
+
     .first-content {
         h1 {
             font-size: $font-size_24;
@@ -321,26 +327,32 @@ p {
             letter-spacing: 0.6px;
             line-height: 1.7;
         }
+
         p {
             padding-top: $space_35 - 5;
             //padding-bottom: $space_35;
             line-height: 1.5;
             letter-spacing: 0.7px;
-            @media SCREEN and (min-width: $desktop){
+            @media SCREEN and (min-width: $desktop) {
                 font-size: $font-size_24;
             }
         }
+
         .click {
             padding-top: $space_20 * 2;
+
         }
     }
+
     .second-content {
         padding-bottom: $space_25;
+
         img {
             width: 100% !important;
         }
     }
 }
+
 .bullet-content {
     .list-content {
         padding-left: $space_20;
@@ -352,6 +364,7 @@ p {
         }
     }
 }
+
 .main-content {
     padding: 0 $space_35;
 
@@ -361,6 +374,7 @@ p {
         letter-spacing: 1.5px;
     }
 }
+
 .line-height {
     line-height: 1 !important;
 }
@@ -440,6 +454,7 @@ p {
 
         .about-content {
             width: 40%;
+
             h1 {
                 font-size: $font_size_36;
             }
@@ -466,11 +481,13 @@ p {
     }
 
 }
+
 .padding-right {
     @media screen and (min-width: $desktop) {
         padding-right: $space_20 + 5;
     }
 }
+
 .headers-content {
     padding: 0;
     font-weight: $font-weight_regular;
@@ -478,14 +495,17 @@ p {
         padding: 0 $space_35;
     }
 }
-.main-box{
+
+.main-box {
     position: relative;
-    > a{
+
+    > a {
         position: absolute;
         left: 0;
         top: -200px;
     }
 }
+
 .transfer {
     position: absolute;
     //top: -50px;
@@ -495,13 +515,14 @@ p {
 .footer-input:-webkit-autofill,
 .footer-input:-webkit-autofill:hover,
 .footer-input:-webkit-autofill:focus,
-.footer-input:-webkit-autofill:active{
+.footer-input:-webkit-autofill:active {
     border: 1px solid white !important;
     -webkit-box-shadow: 0 0 0 30px #495983 inset !important;
     //color: white !important;
     -webkit-text-fill-color: white !important;
 }
-.footer-input{
+
+.footer-input {
     color: white;
 }
 
@@ -510,6 +531,12 @@ p {
     background: $color_black;
 }
 
-.hidden{
+.hidden {
     display: none !important;
+}
+
+    .click {
+        @media SCREEN and (min-width: $tablet) {
+        display: none !important;
+    }
 }
