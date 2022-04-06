@@ -42,18 +42,22 @@ $(document).ready(function () {
 
     let frmBtn = document.getElementById("af_contact_button");
     let frm = document.getElementById("af_contact_form");
+    const firstNameInput = document.getElementById('firstname_id');
+    const emailID = document.getElementById('email_id');
+    const contactSelect = document.getElementById('reasons_id');
 
-    // console.log(frm)
     if (frmBtn) {
         frmBtn.addEventListener('click', function () {
             if (($("#firstname_id").val() !== '') && ($("#reasons_id").val() !== '') && ($("#email_id").val() !== '')) {
-                console.log("hi")
                 setTimeout(function () {
                     frm.reset();
                     console.log("clicked")
-
                 }, 1000)
             }
+
+            // firstNameInput.value = '';
+            // emailID.value = '';
+            // contactSelect.value = '';
         });
     }
     let footerFrmBtn = document.getElementById("footer_btn");

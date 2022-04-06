@@ -248,6 +248,13 @@ p {
     }
 }
 
+.first-image-left-shadow {
+    padding-left: 11px;
+    @media SCREEN and (min-width: $desktop) {
+        width: 50%;
+        padding-left: 0px;
+    }
+}
 .right {
     flex-direction: row-reverse !important;
 }
@@ -344,11 +351,15 @@ p {
         }
     }
 
-    .second-content {
-        padding-bottom: $space_25;
+    .banner-second-content {
+        padding-right: 10px;
 
-        img {
-            width: 100% !important;
+        .second-content {
+            padding-bottom: $space_25;
+
+            img {
+                width: 100% !important;
+            }
         }
     }
 }
@@ -393,13 +404,22 @@ p {
 
         }
 
-        .second-content {
+        .banner-second-content {
             width: 55%;
+            padding-right: 5px;
+            @media SCREEN and (min-width: $desktop) {
+                padding-right: 0;
+            }
 
-            img {
-                display: unset;
-                width: 100% !important;
-                height: auto;
+
+            .second-content {
+                width: 100%;
+
+                img {
+                    display: unset;
+                    width: 100% !important;
+                    height: auto;
+                }
             }
         }
     }
@@ -419,14 +439,16 @@ p {
             width: 40%;
         }
 
-        .second-content {
-            padding-right: $space_20 - 5;
-            width: 55%;
+        .banner-second-content {
+            .second-content {
+                padding-right: $space_20 - 5;
+                width: 100%;
 
-            img {
-                display: unset;
-                width: 100% !important;
-                height: auto;
+                img {
+                    display: unset;
+                    width: 100% !important;
+                    height: auto;
+                }
             }
         }
     }
@@ -443,12 +465,16 @@ p {
         flex-direction: row;
         justify-content: space-between;
 
-
-        .first-image {
+        .first-image-right-shadow {
+            padding-left: 0px;
             width: 50%;
 
-            img {
-                //height: auto;
+            .first-image {
+                width: 100%;
+
+                img {
+                    //height: auto;
+                }
             }
         }
 
@@ -474,7 +500,7 @@ p {
         padding: 0 $space_20*4;
 
         p {
-            padding-top: 0 !important;
+            padding-top: $space_20 * 1.5 !important;
 
         }
 
@@ -535,8 +561,26 @@ p {
     display: none !important;
 }
 
-    .click {
-        @media SCREEN and (min-width: $tablet) {
+.click {
+    @media SCREEN and (min-width: $tablet) {
         display: none !important;
+    }
+}
+
+//.banner-second-content {
+//    padding-right: 13px;
+//}
+
+.first-image-left-shadow {
+    padding-left: 11px;
+    @media SCREEN and (min-width: $desktop) {
+        padding-left: 0;
+    }
+}
+
+.first-image-right-shadow {
+    padding-right: 10px;
+    @media SCREEN and (min-width: $desktop) {
+        padding-right: 0;
     }
 }
